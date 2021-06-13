@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formlar</title>
+    <style>
+        #seker{
+            border: 2px solid blue;
+        }
+    </style>
+</head>
+<body>
+    <a href="../1-lesson-1/1-syntax.rar">dosyayı indir</a>
+    <table border="1px" width=50% style="text-align: center;">
+        <caption style="caption-side: bottom;">isim ve soyisim tablosu</caption>
+        <thead>
+            <tr>
+                <th>name</th>
+                <th>surname</th>
+                <th>age</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+                <td>ali</td>
+                <td>yılmaz</td>
+                <td>30</td>
+            </tr>
+            <tr>
+                <td>rıdvan</td>
+                <td>gök</td>
+                <td rowspan="2">27</td> <!--sütunları birleştiri-->
+            </tr>
+            <tr>
+                <td>hasan</td>
+                <td>akcıl</td>
+                <!-- <td colspan="3">25</td> satırı birleştiri -->
+            </tr>
+            
+        </tbody>
+    </table>
+    <label>FORM</label>
+    <br><br>
+    <form action="result.html" method="GET" target="_blank">
+        <label>isim:<input type="text" name="isim"></label><br> <!--label i ilişkilendirme 1.yöntem-->
+        <label for="isim">isim:</label>
+        <input type="text" name="isim" id="isim"><br>
+        <label for="soyad">soyad:</label>
+        <input type="text" name="soyad" id="soyad"><br>
+        <br><br><br>
+        <div>
+            <label for="">cinsiyet</label>
+            <input type="radio" name="gender" id="gender1" value="erkek">
+            <label for="gender1">erkek</label>
+            <input type="radio" name="gender" id="gender2" value="kadın">
+            <label for="gender2">kadın</label>
+            
+        </div>
+        <br>
+        <div>
+            <label>Favori hayvan belirtiniz:</label>
+            <input type="checkbox" name="animal1" id="panda" value="panda">
+            <label for="panda">panda</label>
+            <input type="checkbox" name="animal2" id="kedi" value="kedi">
+            <label for="kedi">kedi</label>
+            <input type="checkbox" name="animal3" id="kopek" value="kopek">
+            <label for="kopek">kopek</label>
+        </div><br>
+        <div>
+            <label for="mail">mail:</label>
+            <input type="email" name="mail" id="mail">
+        </div>
+        <div>
+            <label for="dosya">dosya:</label>
+            <input type="file" name="dosya" id="dosya">
+        </div>
+        <div>
+            <label for="tel">telefon no:</label>
+            <input type="tel" name="tel" id="tel" pattern="[0-9]{3} [0-9]{3} [0-9]{2} [0-9]{2}" placeholder="tel no giriniz:">
+        </div>
+        <br>
+        
+        <input type="submit"> <br>
+        <input type="reset" value="reset">
+    </form>
+    <form action="result.html" method="GET" target="_blank">
+        <div>
+            <label>Hangi tatliyi seversiniz:</label>
+            <select name="tatli" id="seker" multiple required size="10">
+                <optgroup  label="sutlu tatlilar">
+                    <option >bir tatli seciniz: </option>
+                    <option value="sütlac">sütlac</option>
+                    <option value="keskül">keskül</option>
+                    <option  value="asure">asure</option>
+                    <option value="puding">puding</option>
+                    <option value="magnolya">magnolya</option>
+                </optgroup>
+                <optgroup label="serbetli tatlilar">
+                    <option value="baklava">baklava</option>
+                    <option value="sobiyet">sobiyet</option>
+                    <option value="kunefe">kunefe</option>
+                </optgroup>
+            </select>
+        </div>
+        <div>
+            <input type="submit">
+            <input type="reset">
+        </div>
+    </form>
+
+</body>
+</html>

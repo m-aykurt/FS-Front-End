@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Datalist</title>
+</head>
+<body>
+    <form action="result.html" target="_blank">
+
+        <label for="yas">yas:</label>
+        <input type="number" name="age" id="age"> <br>
+        <input type="submit" name="" id="">
+        <input type="reset" name="" id="">
+        <div>
+            <label for="browser">Browsers:</label> <!--datalist e normal giriş yapabilirken dropdown a yazılmaz-->
+            <input type="text" name="browser" id="browser" list="browsers">
+            <datalist id="browsers">
+                <option value="firefox"></option>
+                <option value="chrome"></option>
+                <option value="safari"></option>
+                <option value="brave"></option>
+
+            </datalist>
+        </div>
+        <div>
+            <label>Hangi tatliyi seversiniz:</label>
+            <select name="tatli" id="seker" multiple required size="10">
+                <optgroup  label="sutlu tatlilar">
+                    <option >bir tatli seciniz: </option>
+                    <option value="sütlac">sütlac</option>
+                    <option value="keskül">keskül</option>
+                    <option  value="asure">asure</option>
+                    <option value="puding">puding</option>
+                    <option value="magnolya">magnolya</option>
+                </optgroup>
+                <optgroup label="serbetli tatlilar">
+                    <option value="baklava">baklava</option>
+                    <option value="sobiyet">sobiyet</option>
+                    <option value="kunefe">kunefe</option>
+                </optgroup>
+            </select>
+        </div>
+        <br>
+        <div>
+            <fieldset>
+                <legend>kisisel bilgiler</legend>
+                <label for="isim">isim:</label> 
+                <input type="text" name="isim" id="isim" placeholder="adınız: "> <br>
+                <label for="soyisim">soyisim:</label> 
+                <input type="text" name="soyisim" id="soyisim" placeholder="soyadınız: "> <br>
+                
+            </fieldset>
+        </div>
+    </form>
+
+</body>
+</html>
