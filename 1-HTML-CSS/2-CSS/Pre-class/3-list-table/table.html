@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tables</title>
+    <style>
+        table,th,td{
+            border: 1px solid blue;
+        }
+        table{
+            border-collapse: collapse;
+            width: 100%;
+        }
+        th{
+            height: 50px;
+            background-color: #4CAF50;
+            color: white;
+            text-align: left;
+            /* visibility: hidden; */
+        }
+        td{
+            padding: 1px;
+            /* display: inline-block; */
+            
+        }
+        tr:hover {background-color: #f5f5f5;}
+        tr:nth-child(odd) {background-color: #b9b9b9;}
+
+    </style>
+</head>
+<body>
+    <h3>table prop.</h3>
+    <table>
+        <thead>
+            <tr>
+                <th>name</th>
+                <th>surname</th>
+                <th>age</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Murat</td>
+                <td>aykurt</td>
+                <td>30</td>
+            </tr>
+            <tr>
+                <td>selin</td>
+                <td>aykurt</td>
+                <td>28</td>
+            </tr>
+            <tr>
+                <td>hasan</td>
+                <td>ali</td>
+                <td>15</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>

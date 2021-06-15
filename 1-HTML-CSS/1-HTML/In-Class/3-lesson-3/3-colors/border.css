@@ -1,0 +1,28 @@
+#par{
+    border: 2px solid blue;
+}
+#par-1{
+    border-style: dotted;
+    border-width: 3px;
+    border-color: rgb(255, 0, 0);
+}
+#par-2{
+    border-style:double;
+    border-width: 3px;
+    border-color: rgb(0, 255, 115);
+}
+#par-3{
+    border-style: groove;
+    border-width: 3px;
+    border-color: #0096A1;
+}
+#par-4{
+    border-style:inset;
+    border-width: 3px;
+    border-color: hsl(240, 100, 0.5);
+}
+#par-5{
+    border-style:ridge;
+    border-width: 3px;
+    border-color: rgba(0, 0, 0,0.5);
+}

@@ -1,0 +1,19 @@
+#par1{
+    color: darkgreen;
+    text-transform: lowercase;
+}
+#par2{
+    color: hsla(120, 80%, 50%, 0.6);
+    text-align: center;
+    text-transform: uppercase;
+}
+#par3{
+    color: rgba(145,14,21,0.9);
+    text-align: justify;
+    text-decoration: underline wavy black;
+    text-indent: 25px;
+}
+#par4{
+    color: rgb(60, 83, 184);
+    text-decoration: underline;
+}

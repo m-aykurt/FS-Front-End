@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Positioing</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .box{
+            width: 100px;
+            height: 100px;
+        }
+        #first{
+            background-color: red;
+        }
+        #second{
+            background-color: blue;
+            position: relative;
+            /* position: absolute;
+            left: 100px;
+            top: 25px; */
+
+        }
+        #mbox{
+            width: 30px;
+            height: 30px;
+            background-color: yellow;
+            position: absolute;
+            top: 50px;
+            left: 50px;
+        }
+        #third{
+            background-color: green;
+            position: fixed;
+            top: 0;
+            right: 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="box" id="first">box1</div>
+    <div class="box" id="second">
+        
+        <div id="mbox">mbox</div>
+    </div>
+    <div class="box" id="third">box3</div>
+</body>
+</html>

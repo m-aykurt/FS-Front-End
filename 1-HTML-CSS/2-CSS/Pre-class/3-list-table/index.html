@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>List</title>
+    <style>
+        #outer{
+            border: 2px solid black;
+            list-style-image: url("img/indir.png");
+            list-style-position: inside;
+        }
+        
+        #outer li{
+            list-style-type: circle;
+        }
+        
+        #inner li{
+            list-style-type: square;
+        }
+        
+    </style>
+</head>
+<body>
+    <ul id="outer">
+        <li>kurs 1</li>
+        <li>kurs 2</li>
+        <li> 
+            <ul id="inner">
+                <li>ders 1</li>
+                <li>ders 2</li>
+                <ol>
+                    <li>Konu 1</li>
+                    <li>Konu 2</li>
+                </ol>
+                <li>ders 3</li>
+            </ul>
+        </li>
+        <li>kurs 3</li>
+    </ul>
+</body>
+</html>
