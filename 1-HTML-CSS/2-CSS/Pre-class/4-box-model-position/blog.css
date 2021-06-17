@@ -114,6 +114,26 @@ h2{
 	margin-right: 5px;
 }
 
+
+ul{
+    padding: 10px;
+    list-style-type: none;
+}
+ul li{
+    
+    margin-bottom: 10px;
+}
+.header{
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid rgba(80, 76, 76,0.3);
+}
 .tags li a{
-	text-decoration: none;
+    background-color:#000 ;
+    color: #fff;
+    display: inline-block;
+    text-decoration: none;
+    padding: 0 8px;
+    text-align: center;
+    border-radius: 4px;
 }
