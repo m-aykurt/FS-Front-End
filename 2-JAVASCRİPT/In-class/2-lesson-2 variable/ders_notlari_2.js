@@ -62,17 +62,16 @@
 // console.log(num1, num2);
 
 function func1() {
-    var myName = 'John';
-    console.log('from func1 ...', myName);
-    if (true) {
-      let herName = 'Daisy';
-      console.log(yourName, herName);
-    }
-    console.log(yourName);
+  var myName = 'John';
+  console.log('from func1 ...', myName);
+  if (true) {
+    let herName = 'Daisy';
     console.log(yourName, herName);
-    var yourName = 'Melih';
   }
-  //console.log('from func1 ...', myName);
-  
-  func1();
-  
+  console.log(yourName);
+  console.log(yourName, herName);
+  var yourName = 'Melih';
+}
+//console.log('from func1 ...', myName);
+
+func1();
