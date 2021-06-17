@@ -10,15 +10,11 @@ body{
 #form-container{
     max-width: 1240px;
     margin: auto;
-    margin: 30px 100px;
     background-color: rgba(0,0,0,0.3);
-    position: relative;
 }
 
 #header{
     max-width: 1240px;
-    height: 90px;
-    margin: 30px 100px;
     text-align: center;
     color: white;
 }
