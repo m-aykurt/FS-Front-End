@@ -1,0 +1,45 @@
+h1{
+    text-align: center;
+}
+
+.visible{
+    background-color: burlywood;
+    width: 300px;
+    height: 50px;
+    border: 3px solid coral;
+    overflow: visible;
+}
+
+.hidden{
+    background-color: cornflowerblue;
+    width: 300px;
+    height: 50px;
+    border: 3px  solid rgba(166, 223, 11, 0.788);
+    overflow: hidden;
+}
+.scrool{
+    background-color: rgb(36, 223, 11);
+    width: 300px;
+    height: 50px;
+    border: 3px  solid rgba(166, 223, 11, 0.788);
+    overflow: scroll;
+}
+
+.auto{
+    background-color: turquoise;
+    width: 300px;
+    height: auto;
+    border: 3px solid purple;
+    /* box-sizing: border-box; */
+    /* overflow:auto ; */
+}
+
+.xy{
+    background-color: saddlebrown;
+    width: 300px;
+    height: 150px;
+    border: 3px solid yellowgreen;
+    overflow-x: scroll ;
+    overflow-y: hidden ;
+}
+

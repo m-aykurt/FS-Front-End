@@ -1,0 +1,45 @@
+.static{
+    position: static;
+    border: 3px solid teal;
+    top: 50px;
+    left: 150px;
+}
+
+.relative{
+    position: relative;
+    border: 3px dotted red;
+    top: 25px;
+    left: 50px;
+}
+
+.fixed{
+    position: fixed;
+    border: 3px double black;
+    top: 175px;
+    right: 100px;
+}
+#rel{
+    position: relative;
+    height: 100px;
+    width: 200px;
+    border: 5px solid black;
+}
+.absolute{
+    position: absolute;
+    border: 3px dashed blue;
+    top: 5px;
+    right: 5px; 
+    width: 60px;  
+
+}
+.sticky{
+    position: sticky;
+    padding: 7px;
+    top: 10px;
+    background-color: burlywood;
+    border: 3px solid rgb(109, 109, 109);
+}
+#outer{
+    height: 500px;
+    border: 4px solid red;
+}
