@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media</title>
+    <style>
+
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .container{
+            background-color: goldenrod;
+            display: flex;
+            justify-content: flex-end;
+                        
+        }
+
+        .link{
+            padding: 15px;
+            text-decoration: none;
+            color: #fff;
+        }
+
+        @media screen and (max-width:800px) {
+            .container{
+                justify-content: space-around;
+            }
+        }
+
+        @media screen and (max-width:600px) {
+            .container{
+                flex-direction: column;
+            }
+            .link {
+                text-align: center;
+                padding: 10px;
+                border-bottom: 1px solid rgba(255,255,255,0.3);
+                border-top: 1px solid rgba(0,0,0,.1);
+            }
+            .link:last-child{
+                border-bottom: none;
+            }
+        }
+
+        .link:hover{
+            background-color: rgb(206, 174, 94);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <a class="link" href="#">Home</a>
+        <a class="link" href="#">About</a>
+        <a class="link" href="#">Products</a>
+        <a class="link" href="#">Contact</a>
+    </div>
+</body>
+</html>
