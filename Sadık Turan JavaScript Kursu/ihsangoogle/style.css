@@ -1,0 +1,156 @@
+body{
+    margin: 0px;
+    font-family: arial,sans-serif;
+    font-size: 0.9em;
+    font-style: normal;
+    box-sizing: border-box;
+}
+
+.header-nav{
+    float: right;
+}
+
+#client{
+    width: 100px;
+    height: 100px;
+    background-color: gray;
+    border-radius: 50%;
+    padding: 5px;
+
+}
+a{
+    margin: 5px 5px;
+    text-decoration: none;
+    color: rgb(87, 87, 87);
+}
+
+a:hover{
+    text-decoration: underline;
+}
+
+nav{
+    display: flex;
+    justify-content: flex-end;
+    margin-right:1.4rem ;
+    align-items: center;   
+}
+
+#profile{
+    width: 42px;
+
+}
+
+.header-nav{
+    display: flex;
+    align-items: center;
+    padding-left: 20px;
+    margin-right: 10px;
+}
+
+ul>a, ul>img {
+    padding: 0 8px;
+}
+.header-img:hover {
+    box-shadow: 0 0 5px gainsboro  ;
+    border-radius: 25px;
+    cursor: pointer;
+}
+
+#section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 5% ;
+       
+}
+
+.input-container{
+    display: flex;
+    justify-content: space-between;
+    width: 600px;
+    height: 38px;
+    border: 1px solid gainsboro;
+    border-radius: 20px;
+    margin-top: 30px;
+
+}
+
+.input-container:hover{
+    box-shadow:0 0 10px gainsboro ;
+}
+
+#input-area{
+   border: none;
+   width: inherit;
+   
+}
+
+.input-container img{
+    margin: 0 10px;
+}
+
+.button-container{
+    padding-top: 30px;
+}
+
+button{
+    background-color: #F8F9FA;
+    border-radius: 7px;
+    border: none;
+    height: 36px;
+    padding: 0 20px ;
+    margin: 0 5px;
+    letter-spacing: 0.5px;
+}
+
+button:hover{
+    cursor: pointer;
+    box-shadow: 0 0 10px 0 gainsboro;
+}
+
+#footer {
+    background-color: #F2F2F2;
+    position: fixed;    
+    width: 100%;
+    bottom: 0;  
+    box-sizing: border-box;
+    display: inline-block;
+}
+
+#F1{
+    color: rgb(87, 87, 87);
+    box-sizing: border-box;
+    padding-left: 15px;
+    padding-top: 15px;
+
+}
+
+#footer-bottom {
+    box-sizing: border-box;
+    width: 100%;
+    padding: 25px 5px;
+    
+}
+
+#inner-1{
+    float: left;
+    display: inline-block;
+}
+
+#fav{
+    border-radius: 50px;
+}
+
+#F3-P{
+    
+    text-align: center;
+    display: inline-block;
+    margin: 0;
+    padding-left:250px;
+}
+#F4{
+    float: right;
+    display: inline-block;
+
+
+}

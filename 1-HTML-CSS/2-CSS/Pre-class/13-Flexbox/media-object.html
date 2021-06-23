@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media</title>
+    <style>
+        .media {
+            display: flex;
+            align-items: flex-start;
+            background-color: antiquewhite;
+            padding: 16px;
+            max-width: 500px;
+            margin: 20px;
+            border-radius: 5px;
+        }
+
+        .media-obj {
+            width: 100px;
+            margin-right: 20px;
+        }
+
+        .media-heading{
+            margin: 0 0 8px;
+        }
+
+        .img-right{
+            order: 3;
+        }
+
+        .inner-media{
+            margin-left: 0;
+            margin-right: 0;
+            padding-right: 0;
+            padding-left:0 ;
+        }
+
+    </style>
+</head>
+
+<body>
+    <div class="media">
+        <img class="media-obj" src="avatar.png" alt="avatar">
+        <div class="media-body">
+            <h3 class="media-heading">Lorem, ipsum.</h3>
+            <p>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolorum facilis eos cum, fugit illo, illum ea
+                voluptate totam iusto iure non nesciunt perspiciatis animi harum.
+            </p>
+        </div>
+    </div>
+    <div class="media">
+        <img class="media-obj img-right" src="avatar.png" alt="avatar">
+        <div class="media-body">
+            <h3 class="media-heading">Lorem, ipsum.</h3>
+            <p>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolorum facilis eos cum, fugit illo, illum ea
+                voluptate totam iusto iure non nesciunt perspiciatis animi harum.
+            </p>
+        </div>
+    </div>
+
+    <div class="media">
+        <img class="media-obj" src="avatar.png" alt="avatar">
+        <div class="media-body">
+            <h3 class="media-heading">Lorem, ipsum.</h3>
+            <p>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolorum facilis eos cum, fugit illo, illum ea
+                voluptate totam iusto iure non nesciunt perspiciatis animi harum.
+            </p>
+            <div class="media inner-media">
+                <img class="media-obj" src="avatar.png" alt="avatar">
+                <div class="media-body">
+                    <h3 class="media-heading">Lorem, ipsum.</h3>
+                    <p>
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolorum facilis eos cum, fugit illo
+                    </p>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+</body>
+
+</html>

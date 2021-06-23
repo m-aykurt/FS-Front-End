@@ -21,25 +21,37 @@
     <nav>
         <div class="container clearfix">
             <div id="logo-box">
-                <a href="#" class="logo text-uppercase">
+                <a href="/" class="logo text-uppercase">
                     Start Bootstrap
                 </a>
             </div>
-            <div id="nav-links">
+            <div id="nav-links" class="responsive">
                 <ul>
+
                     <li class="nav-item">
-                        <a href="#" class="nav-link text-uppercase">Portfolio</a>
+                        <a href="#" class="nav-link text-uppercase nav-icon">
+                            <i class="fas fa-bars"></i>
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a href="#" class="nav-link text-uppercase">
+                            Portfolio
+                        </a>
                     </li>
                     <li class="nav-item">
-                        <a href="#" class="nav-link text-uppercase">About</a>
+                        <a href="#" class="nav-link text-uppercase">
+                            About
+                        </a>
                     </li>
                     <li class="nav-item">
-                        <a href="#" class="nav-link text-uppercase">Contact</a>
+                        <a href="#" class="nav-link text-uppercase">
+                            Contact
+                        </a>
                     </li>
                 </ul>
             </div>
         </div>
-
     </nav>
 
     <header>
@@ -172,7 +184,7 @@
             </div>
         </div>
 
-        <button class="btn btn-outline">
+        <button class="btn btn-outline btn-large">
             <i class="fas fa-download"></i>
             Download Now!
         </button>
@@ -205,6 +217,70 @@
             </form>
         </div>
     </section>
+
+    <footer>
+        <div class="container clearfix">
+            <div class="col">
+                <h4 class="text-uppercase">Location</h4>
+                <p>Kırklareli/Turkey Station, No:22162 </p>
+            </div>
+            <div class="col">
+                <h4 class="text-uppercase">Around the Web</h4>
+
+                <ul>
+                    <li>
+                        <button class="btn btn-outline btn-social">
+                            <i class="fab fa-facebook"></i>
+                        </button>
+                    </li>
+                    <li>
+                        <button class="btn btn-outline btn-social">
+                            <i class="fab fa-google-plus"></i> </button>
+                    </li>
+                    <li>
+                        <button class="btn btn-outline btn-social">
+                            <i class="fab fa-twitter"></i> </button>
+                    </li>
+                    <li>
+                        <button class="btn btn-outline btn-social">
+                            <i class="fab fa-linkedin"></i> </button>
+                    </li>
+                    <li>
+                        <button class="btn btn-outline btn-social">
+                            <i class="fas fa-globe-europe"></i> </button>
+                    </li>
+                </ul>
+
+
+            </div>
+            <div class="col">
+                <h4 class="text-uppercase">About Freelancer</h4>
+                <p>
+                    Freelance is free to use, open source Bootstrap theme created by @ Murat
+                </p>
+            </div>
+
+        </div>
+    </footer>
+
+    <div class="copyright">
+        <div class="container">
+            <small>Copyright My Website 2021</small>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+
+	<script>
+
+		$('.nav-icon').click(function () {
+			$('#nav-links').toggleClass("responsive");
+			return false;
+		});
+
+
+
+	</script>
 </body>
 
 </html>
