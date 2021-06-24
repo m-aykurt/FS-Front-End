@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>width</title>
+    <style>
+        .lorem1{
+            height: 100px;
+            width: 50%;
+            background-color: teal;
+        }
+
+        .lorem2{
+            width: 300px;
+            height: 50%;
+            padding: 20px;
+            border: 15px dotted black;
+            background-color: tomato;
+        }
+
+        .max-width{
+            max-width: 50%;
+            /* width:5%; */
+        }
+
+        .min-width{
+            display: inline-block;
+            min-width: 3000px;
+            background-color: blueviolet;
+        }
+
+        .max-height{
+            max-height: 20px;
+            border: 5px solid blue;
+            padding: 20px;
+            overflow: auto;
+        }
+
+        .min-height{
+            min-height: 330px;
+            background-color: burlywood;
+        }
+
+        .last{
+
+        }
+    </style>
+</head>
+<body>
+    <h1>Width and height</h1>
+
+    <div class="lorem1">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis, dolorum!
+    </div>
+    <hr>
+    <div class="lorem2">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis, dolorum! Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio, consequatur?
+    </div>
+    <hr>
+
+    <h3>With Max-Width</h3>
+    <div class="max-width">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam dolorum quis quam? Cumque deleniti corrupti delectus
+    </div>
+    <hr>
+    <h3>no Min-width</h3>
+    <span style="background-color: burlywood;">
+
+        Lorem ipsum dolor sit amet consectetur adipisicing 
+    </span>
+    <h3>Min-width</h3>
+    <span class="min-width">
+        Lorem ipsum dolor sit amet consectetur adipisicing 
+    </span>
+
+    <hr>
+
+    <h2>without max-height</h2>
+    <div>
+    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Blanditiis culpa aspernatur qui, consequuntur dolor quas voluptates doloribus non eligendi. Distinctio.
+    </div>
+
+    <h2>with max-height</h2>
+    <div class="max-height">
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aspernatur est hic placeat dolore, nihil fuga tempore ab id! Impedit soluta doloribus temporibus corrupti aliquid, nulla alias dolore tempora ab provident exercitationem quam aspernatur quisquam voluptate perspiciatis accusamus distinctio vitae dolor consequuntur et. Voluptatibus soluta saepe non ipsa sed officiis delectus?
+    </div>
+    <hr>
+    <h2>without min-height</h2>
+    <div class="last">
+Lorem, ipsum dolor sit amet consectetur adipisicing elit. Neque facere expedita reiciendis hic dolorem, eveniet facilis quia ullam debitis pariatur!
+    </div>
+    <h2>with min-height</h2>
+    <div class="min-height last">
+       Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit quis soluta, odio est quas veniam maiores molestiae necessitatibus rem amet!
+    </div>
+</body>
+</html>

@@ -1,0 +1,49 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.outer{
+    display: flex;
+    align-items: flex-start;
+    width: 50%;
+    border: 1px solid black;
+    margin: 10px;
+    background-color: coral;
+}
+
+.image{
+    width: 100px;
+    padding: 25px 10px;
+}
+
+.text{
+    padding: 25px 10px;
+}
+
+.outer-2{
+    display: flex;
+    align-items: flex-start;
+    
+    width: 50%;
+    margin: 10px;
+    background-color: coral;
+}
+
+.outer-2 .profile{
+    order: 3;
+}
+
+.outer-3{
+    display: flex;
+    align-items: flex-start;
+    width: 50%;
+    margin: 10px;
+    background-color: coral;
+}
+
+.outer-3 .text, .outer-3 .profile{
+    margin: 0;
+    padding: 0;
+}
