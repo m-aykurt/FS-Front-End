@@ -82,19 +82,26 @@
 // booelan
 
 
-console.log(typeof false);
-console.log(typeof False);
-console.log(typeof 8>4);
-var x = 8=="8";
-var y = 8 === "8";
-console.log(x);
-console.log(y);
+// console.log(typeof false);
+// console.log(typeof False);
+// console.log(typeof 8>4);
+// var x = 8=="8";
+// var y = 8 === "8";
+// console.log(x);
+// console.log(y);
 
-var x = Boolean(0);
-var y = Boolean("0");
-var z = Boolean(-0);
-var z = Boolean(null);
-console.log(x);
-console.log(y);
-console.log(z);
-console.log(typeof null);
+// var x = Boolean(0);
+// var y = Boolean("0");
+// var z = Boolean(-0);
+// var z = Boolean(null);
+// console.log(x);
+// console.log(y);
+// console.log(z);
+// console.log(typeof null);
+
+myVar = "hello"
+myVar2 = myVar
+myVar = "hello world"
+
+console.log(myVar);
+console.log(myVar2);
