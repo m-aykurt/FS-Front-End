@@ -1,0 +1,61 @@
+
+*{
+      box-sizing: border-box; 
+      margin: 0;
+      padding: 0; 
+}
+
+h3{
+    text-align: center;
+    padding-bottom: 1rem;
+}
+
+.button-1{
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 0.5rem;
+    
+}
+
+
+.button-1 button{
+    color: indigo;
+    background-color: rgba(0, 128, 0, 0.270); 
+    width: 70px;
+    border-radius: 5px;
+
+    outline: none;
+    border: 2px solid rgba(0, 128, 0, 0.311);
+    
+}
+
+#table1{
+    padding-bottom: 3rem;
+    width: 100%;
+}
+#table2{
+    width: 100%;
+
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#container{
+    padding: 1rem 2rem;
+    margin: auto;    
+}
+table{
+    border-collapse: collapse;
+
+}
+
+ th {
+    border-bottom: 2px solid green;
+    border-collapse: collapse;
+    padding-bottom: 1rem;
+  }
+  td{
+      padding-top: 2rem;
+  }

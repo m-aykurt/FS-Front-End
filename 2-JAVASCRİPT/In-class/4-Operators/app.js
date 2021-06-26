@@ -65,8 +65,8 @@
 
 // assigment-operator
 
-var a = 6;
-var b = 2;
+// var a = 6;
+// var b = 2;
 
 // console.log(a=b, {a},{b});
 // console.log(a+=b, {a},{b});
@@ -76,24 +76,24 @@ var b = 2;
 // console.log(a%=b, {a},{b});
 
 
-console.log(false == false);
-console.log(Boolean(0)==false);
-console.log(Boolean("0")==false);
-console.log(0 ==false);
-console.log("0"==false); // true ??
+// console.log(false == false);
+// console.log(Boolean(0)==false);
+// console.log(Boolean("0")==false);
+// console.log(0 ==false);
+// console.log("0"==false); // true ??
 
-console.log(typeof null); //object
+// console.log(typeof null); //object
 
-console.log(null==null);
-console.log(null==false);
-console.log(null==false);
-console.log(null+3);
-console.log(null==0);
-console.log(null=="0");
-console.log(Boolean(null)==false); //true
-console.log(Boolean(null)==Boolean(0)); //TRUE
-console.log(Boolean(null)==Boolean("0")); //FALSE
-console.log(typeof NaN); // NUMBER
+// console.log(null==null);
+// console.log(null==false);
+// console.log(null==false);
+// console.log(null+3);
+// console.log(null==0);
+// console.log(null=="0");
+// console.log(Boolean(null)==false); //true
+// console.log(Boolean(null)==Boolean(0)); //TRUE
+// console.log(Boolean(null)==Boolean("0")); //FALSE
+// console.log(typeof NaN); // NUMBER
 
 
 
@@ -104,20 +104,56 @@ console.log(typeof NaN); // NUMBER
 //     console.log(a,typeof a);
 // }
 
-console.log(015+025); //34 = 13 +21
-console.log(15+025); // 36 = 15+21
-console.log(15+25); // 38 =13+25
-console.log(15.0+25.0); // 40
+// console.log(015+025); //34 = 13 +21
+// console.log(15+025); // 36 = 15+21
+// console.log(15+25); // 38 =13+25
+// console.log(15.0+25.0); // 40
 
-console.log(0075 + 0075); // 80 in üzerine geçerse onluk sisteme dönüyor.
-console.log(00080 + 0080);
+// console.log(0075 + 0075); // 80 in üzerine geçerse onluk sisteme dönüyor.
+// console.log(00080 + 0080);
 
-console.log(9<8);
-console.log(9<8<7); // true
-console.log(false < 7); // true
-console.log(false > 7); // true
-console.log(false == 0); // true
-console.log("Clarusway">"clarusway"); 
-console.log("c".charCodeAt()); 
-console.log("C".charCodeAt()); 
-console.log("a".charCodeAt());
+// console.log(9<8);
+// console.log(9<8<7); // true
+// console.log(false < 7); // true
+// console.log(false > 7); // true
+// console.log(false == 0); // true
+// console.log("Clarusway">"clarusway"); 
+// console.log("c".charCodeAt()); 
+// console.log("C".charCodeAt()); 
+// console.log("a".charCodeAt());
+
+// var a= 9;
+// var b = 5;
+
+// a = --b
+// console.log(a);
+// console.log(b);
+
+
+// karşılaştırm opr.
+
+// console.log(Boolean("0")); // true
+// console.log(Boolean(0)); // false
+// console.log("0"); // boolean olarak false yani number 0 olarak algılıyor
+
+// console.log(null == null);
+// console.log(null === 0);
+// console.log(Boolean(null) == 1); // false
+// console.log(Boolean(null) == 0); // true
+
+console.log(typeof NaN);
+console.log(NaN==null);
+console.log(NaN==NaN); // FALSE
+
+// kullanıcıdan alınan veri sayı mı ?
+
+// isNaN
+
+var a;
+while (isNaN(a)){
+    a = prompt("enter a number: ");
+    a = Number(a);
+    console.log(a, typeof a);
+}
+
+i
