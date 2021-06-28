@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Products</title>
+    <link rel="stylesheet" href="bootstrap.css">
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <iframe id="map" src="https://maps.google.com/maps?q=0,0&z=15&output=embed"></iframe>
+    <div id="container">
+        <table id="table1">
+            <div class="button_line">
+                <span style="visibility: hidden;">HELLO</span>
+                <h3>List of Products</h3>
+                <button id="map-btn">Show products on map</button>
+            </div>
+            <thead class="head">
+                <tr>
+                    <th class="head_x_num">Order number</th>
+                    <th class="head_x">Man.Number</th>
+                    <th class="head_x">Location</th>
+                    <th class="head_x">Product</th>
+                    <th class="head_x">Stock</th>
+                    <th class="head_x">Status </th>
+                    <th class="head_x">Image</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>00001</td>
+                    <td>Dallas</td>
+                    <td>Door Handle</td>
+                    <td>Exist</td>
+                    <td>
+                        <div class="dropdown">
+                            <button class="dropbtn">Sold</button>
+                            <div class="dropdown-content">
+                                <a href="#">Sold</a>
+                                <a href="#">New</a>
+                                <a href="#">Used</a>
+                            </div>
+                        </div>
+                    </td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>00002</td>
+                    <td>Texas</td>
+                    <td>Door Window</td>
+                    <td>None</td>
+                    <td>
+                        <div class="dropdown">
+                            <button class="dropbtn">Sold</button>
+                            <div class="dropdown-content">
+                                <a href="#">Sold</a>
+                                <a href="#">New</a>
+                                <a href="#">Used</a>
+                            </div>
+                        </div>
+                    </td>
+                    <td></td>
+                </tr>
+            </tbody>
+        </table>
+        <br /><br />
+        <table id="table2">
+            <h3>Types</h3>
+
+            <tbody class="head_y_1">
+                <tr>
+                    <td class="head_y">Honda</td>
+                    <td class="head_y">Left Door</td>
+                    <td class="head_y">Handle</td>
+                    <td class="head_y">1</td>
+                    <td class="head_y">Sent</td>
+                    <td class="head_y"></td>
+                </tr>
+                <tr>
+                    <td class="head_y">Mazda</td>
+                    <td class="head_y">Right Door</td>
+                    <td class="head_y"></td>
+                    <td class="head_y"></td>
+                    <td class="head_y"></td>
+                    <td class="head_y"></td>
+                </tr>
+
+            </tbody>
+        </table>
+
+    </div>
+    <script src="./script.js"></script>
+</body>
+
+</html>
