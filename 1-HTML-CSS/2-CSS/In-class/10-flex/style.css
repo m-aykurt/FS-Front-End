@@ -1,0 +1,66 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.flex-container{
+    border: 5px solid green;
+    display: flex;
+    height: 400px;
+    /* display: inline-flex; */
+
+    /* flex-direction: ; */
+    /* flex-direction: row; */
+    flex-direction: row;
+    /* flex-direction: row-reverse; */
+
+    /* flex-wrap: ; */
+    /* flex-wrap: nowrap; */
+    flex-wrap: wrap;
+
+    /* flex-flow: ;  shortand propr.*/ 
+    /* flex-flow: row nowrap; */
+    /* flex-flow: column wrap ; */
+
+    /* justify-content: ; */
+    /* justify-content: flex-start; default */
+    /* justify-content: space-around; */
+    /* justify-content: center; */
+    /* justify-content: space-between; */
+
+    /* dikey eksende hareket */
+    /* align-items: ; */
+    /* align-items: stretch; default */
+    /* align-items: flex-end;  */
+    /* align-items: baseline; */
+    /* align-items: center; */
+    
+    /* coklu satırlardaki problem */
+
+    /* align-content: ; */
+    /* align-content: stretch; default */
+    /* align-content: flex-start; */
+    /* align-content: flex-end; */
+    align-content: flex;
+
+
+    
+}
+
+.items{
+    background-color: indianred;
+    color: white;
+    font-size: 20px;
+    padding: 10px;
+    margin: 3px;
+    text-align: center;
+    width: 60px;
+    
+}
+/* .item1{
+    font-size: 60px;
+}
+
+.item2{
+    font-size: 80px;
+} */
