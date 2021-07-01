@@ -16,12 +16,13 @@
 
     /* flex-wrap: ; */
     /* flex-wrap: nowrap; */
-    flex-wrap: wrap;
+    /* flex-wrap: wrap; */
 
     /* flex-flow: ;  shortand propr.*/ 
     /* flex-flow: row nowrap; */
     /* flex-flow: column wrap ; */
 
+    /* yatay eksen */
     /* justify-content: ; */
     /* justify-content: flex-start; default */
     /* justify-content: space-around; */
@@ -33,7 +34,7 @@
     /* align-items: stretch; default */
     /* align-items: flex-end;  */
     /* align-items: baseline; */
-    /* align-items: center; */
+    /* align-items: center; --- perfect center */
     
     /* coklu satırlardaki problem */
 
@@ -41,7 +42,8 @@
     /* align-content: stretch; default */
     /* align-content: flex-start; */
     /* align-content: flex-end; */
-    align-content: flex;
+    /* align-content:space-between; */
+    /* align-content: space-around; */
 
 
     
@@ -54,13 +56,33 @@
     padding: 10px;
     margin: 3px;
     text-align: center;
-    width: 60px;
+    width: 120px;
     
 }
-/* .item1{
-    font-size: 60px;
+
+.item1{
+
+    /* order: 5;  defaultu 0 ile 1 arasında*/
+    /* flex-grow: 1; default u 0 */
+    /* flex-shrink: ; */
+    align-self: flex-end;
 }
 
 .item2{
-    font-size: 80px;
-} */
+    /* order: 3; */
+    /* flex-grow: 2; */
+    /* flex-shrink: 16; */
+    /* flex-basis: 60%; */
+    align-self: flex-start;
+}
+.item3{
+    /* order: 10; */
+    /* flex-grow:0.5; */
+    /* flex-shrink: 5; */
+    align-self: center;
+}
+
+.item4{
+    /* order: 0; */
+    align-self: baseline;    
+}
