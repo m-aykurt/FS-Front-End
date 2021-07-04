@@ -97,7 +97,7 @@
 // console.log(sum2(1,2,3,4,5));
 
 
-            // FUNCTİON EXRESSİONS
+// FUNCTİON EXRESSİONS
 
 // console.log(sayHi1());
 
@@ -114,7 +114,7 @@
 // console.log(sayHi2());
 // // console.log(greet());
 
-        //recursive fonks.
+//recursive fonks.
 
 // const pascalNumber = function total(n){
 //     if(n===1){
@@ -139,12 +139,124 @@
 //     })(3);
 // console.log(result);
 
-(function (n){
-    let sum = 0;
-    while (n>=0){
-        sum+=n;
-        n--;
-    }
-    console.log("result: ",sum);
-})(5);
+// (function (n){
+//     let sum = 0;
+//     while (n>=0){
+//         sum+=n;
+//         n--;
+//     }
+//     console.log("result: ",sum);
+// })(5);
 
+
+// vergilendirme 
+
+// function tax(argsuments, rate) {
+//     console.log(
+//         for (i = 0; i < arguments.length; i++) {
+//             console.log(arguments[i] * (1 + rate));
+//         })
+// }
+// console.log(tax([100, 200, 300], 0.18))
+
+// var bir = "murat "
+// var iki = "aykurt"
+
+// function demo(){
+//     let bir = "murat "
+//     let iki = "aykurt"
+//     console.log(bir + iki);
+// }
+
+// demo()
+// console.log(bir);
+
+// ARROW FUNCTİON
+
+// const multi = (x,y) => x*y
+
+// console.log(multi(3,5));
+
+// const square = (x) => (x**2)
+
+// console.log(square(2));
+
+// function add100(a){
+//     return a+100
+// }
+// console.log(add100(1));
+
+// 1.yöntem
+
+// const arrow = (a)=>{
+//     return a+100;
+// }
+// console.log(arrow(2));
+
+
+// 2.yöntem
+// const arrow = (a)=> a+100;
+
+// console.log(arrow(3));
+
+
+// 3.yöntem
+// const arrow = a=> a+100;
+
+// console.log(arrow(4));
+
+// const user = 'Mark'
+// const sayHi = (userName = "new user") => `Welcome ${userName}`
+// console.log(sayHi()) //atama olmadığı için default u alır
+// console.log(sayHi("ahmet"))
+// console.log(sayHi(user));
+
+// zero division error
+
+// const div = (num1, num2) => num1 / num2
+// console.log(div(18,3));
+
+// 1.yöntem
+
+// const div=(num1,num2) => {
+//     if (num2===0){
+//         console.log("zero division error");
+//     } 
+//     return num1/num2
+// }
+
+//ternary yapılar
+// const div= (num1,num2) => (num2===0) ? "zero division":num1/num2
+// const div= (num1,num2) => !num2 ? "zero division":num1/num2
+
+// console.log(div(32,4));
+// console.log(div(32,0));
+
+//alan hesaplama
+
+// const calcArea = radius => 3.14*radius**2
+
+// console.log(calcArea(5));
+
+//this metod
+
+// const cat = {
+//     name: 'Muezza',
+//     age: 8,
+//     whatName() {
+//         return this.name
+
+//     }
+// };
+// console.log(cat.whatName());  // Output: Muezza
+
+
+// const car = () => {make:"bmw"}
+// console.log(car()); // undefined
+
+// const car = () => ({make:"bmw"}) //object ifade ederken parantez kullanılıyor
+// console.log(car());
+
+
+// const iief = (num=>num+5)(10)
+// console.log(iief); // tek kullanımlık  ama fonksiyon gibi cagrılmıyor 
