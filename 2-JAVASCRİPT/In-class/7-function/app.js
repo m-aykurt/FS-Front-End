@@ -260,3 +260,22 @@
 
 // const iief = (num=>num+5)(10)
 // console.log(iief); // tek kullanımlık  ama fonksiyon gibi cagrılmıyor 
+
+
+var paraBirimi = function(birim,tutar){
+    if (birim==="lira"){
+        var kur = 1;
+    } else if (birim==="dolar"){
+        var kur =9;
+    } else if (birim === "euro"){
+        var kur = 10;
+    }
+    return tutarHesapla(kur,tutar)
+} 
+
+var tutarHesapla = function(gelenKur,gelenTutar){
+    var hesapYap= gelenKur * gelenTutar;
+    console.log(hesapYap);
+}
+
+paraBirimi("dolar",200)
