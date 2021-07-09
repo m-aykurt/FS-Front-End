@@ -97,3 +97,7 @@
 //     item.style.background="red"
 // })
 // console.log(val);
+
+
+///////ders tekrarı
+

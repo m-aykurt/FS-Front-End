@@ -1,18 +1,37 @@
-// EVENTS LİSTENERS
+// Mouse Events
 
-const btn = document.querySelector("#btnDeleteAll")
-const btn2 = document.querySelector("#btnAddNewTask")
-// console.log(btn);
+const btn = document.querySelector('#btnDeleteAll');
+const ul = document.querySelector('#task-list');
 
-btn.addEventListener("click",function(){
-    console.log("btn clicked");
-})
+// click
+// btn.addEventListener('click',eventHandler);
+// ul.addEventListener('click',eventHandler);
 
-// btn.addEventListener("click",btnClick);
+// double click
+// btn.addEventListener('dblclick',eventHandler);
 
-// function btnClick(){
-//     console.log("btn clicked");
-// }
-// btn.addEventListener("click",btnClick);
-// btn2.addEventListener("click",btnClick);
+//mouse down
+// btn.addEventListener('mousedown',eventHandler);
+// //mouse up
+// btn.addEventListener('mouseup',eventHandler);
 
+// // mouseenter
+// ul.addEventListener('mouseenter',eventHandler);
+// // mouseleave
+// ul.addEventListener('mouseleave',eventHandler);
+
+// // mouseover
+// ul.addEventListener('mouseover',eventHandler);
+// // mouseout
+// ul.addEventListener('mouseout',eventHandler);
+
+// mouse move
+const h5=document.querySelector('h5');
+ul.addEventListener('mousemove',eventHandler);
+
+function eventHandler(event){
+    console.log(`event type : ${event.type}`);
+
+    h5.textContent=`Mouse X : ${event.offsetX } Mouse Y : ${event.offsetY }`;
+
+}
