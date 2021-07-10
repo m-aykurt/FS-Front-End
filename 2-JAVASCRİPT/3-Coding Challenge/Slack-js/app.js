@@ -42,3 +42,16 @@ vowelFinder();
 
 // console.log(vowel_count("MERHABA BEN MURATTİ"))
 // ;
+
+
+// fahrenait-to celcius
+
+const heat = prompt("Please select CF OR FC").toLocaleLowerCase();
+const num = Number(prompt("Please enter to number for convert !"));
+if (heat === "cf"){
+    console.log(`${num} Celcius = `,  ((num * 9/5)+32).toFixed(2), `Fahrenhayt`);
+}else if (heat === "fc") {
+    console.log(`${num} Fahrenhayt = `, ((num-32)*5/9).toFixed(2), `Celcius`);
+}else{
+    console.log("please enter valid value !");
+}

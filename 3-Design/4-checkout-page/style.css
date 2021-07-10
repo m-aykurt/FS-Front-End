@@ -1,3 +1,4 @@
+
 body {
   box-sizing: border-box;
   margin: 0;
@@ -17,6 +18,7 @@ h2 {
 }
 
 .container {
+  border: 1px solid black;
   margin: 0 2rem;
   display: flex;
   flex-direction: row;
@@ -47,39 +49,9 @@ form .form-area input {
   padding: 0.4rem;
 }
 
-/* container-right */
-.container-right {
-  flex-basis: 25%;
-  background-color: rgb(226, 239, 247);
-  margin-left: 2rem;
-  display: flex;
-  flex-direction: column;
-  padding: 1.5rem;
-  border-radius: 15px;
-  align-self: flex-start;
-}
-
-.img-box {
-  display: flex;
-  justify-content: space-around;
-  width: 100%;
-  margin: 1rem 0;
-}
-
-.container-right img {
-  width: 35%;
-  border-radius: 10px;
-}
-
-.total {
-  margin: 1rem;
-}
-.total table {
-  width: 150%;
-}
-
 #bottom-box {
   display: flex;
+  /* justify-content: flex-start; */
 }
 
 .form-box .country-box {
@@ -115,9 +87,44 @@ form .form-area input {
     color: white;
     border: none;
     border-radius: 5px;
-    float: right;
+    /* float: right; */
+    /* justify-content: flex-end; */
     font-size: 1.1rem;
+    /* margin-bottom: 1rem; */
 }
+
+/* container-right */
+.container-right {
+  flex-basis: 25%;
+  background-color: rgb(226, 239, 247);
+  margin-left: 2rem;
+  display: flex;
+  flex-direction: column;
+  padding: 1.5rem;
+  border-radius: 15px;
+  align-self: flex-start;
+}
+
+.img-box {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  margin: 1rem 0;
+}
+
+.container-right img {
+  width: 35%;
+  border-radius: 10px;
+}
+
+.total {
+  margin: 1rem;
+}
+.total table {
+  width: 150%;
+}
+
+
 
 @media screen and (max-width:800px) {
     .container{
@@ -126,5 +133,4 @@ form .form-area input {
         align-items: space-around;
     }
     
-
 }
