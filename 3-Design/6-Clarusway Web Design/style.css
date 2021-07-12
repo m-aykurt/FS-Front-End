@@ -1,0 +1,143 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.5;
+}
+.clarus-color{
+    color: #A9508B;
+}
+a{
+    color: white;
+    text-decoration: none;
+}
+
+#container{
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 0.7fr 3.65fr 2.8fr;
+}
+/* navbar */
+
+#navbar{
+    display: grid;
+    grid-template-columns:7fr 5fr ;
+    background-color: #35424A;
+    color: white;
+    justify-content: center;
+    align-items: center;
+}
+
+.web-design{
+    margin: 0 11rem;
+}
+
+.nav-right{
+    margin:0 5rem ;
+    display: inline-block;
+}
+
+.nav-right span{
+    margin:0 1rem ;
+    
+}
+
+.nav-right a{
+    font-size: 1.2rem;
+    font-weight: lighter;
+
+}
+.nav-right a:hover{
+    color: gray;
+}
+
+
+
+
+/* main */
+#main{
+    display: grid;
+    grid-template-rows: 4fr 1fr;
+    border-top: 5px solid #A9508B;
+    color: white;
+    background-image: url(./assets/showcase.jpg);
+}
+.main-web{
+    text-align: center;
+    margin: auto;
+}
+.main-web h1{
+    margin-bottom: 2rem;
+    font-size: 3.6rem;
+}
+.main-web p{
+    padding: 0 4rem;
+    font-size: 1.5rem;
+
+}
+
+.mail{
+    background-color:#35424A ;
+    display: grid;
+    grid-template-columns: 5fr 5fr;
+    
+}
+.mail .newsletter{
+    margin: auto;
+    text-align: center;
+    font-size: 1.4rem;
+    font-weight: bold;
+    
+}
+
+.mail .mail-area{
+    margin: auto;
+    text-align: center;
+}
+.mail-area input{
+    padding: 0.7rem;
+    padding-right: 4rem;
+}
+.mail-area button{
+    color: white;
+    background-color: #A9508B;
+    padding: 0.7rem;
+    transition: all 0.3s;
+}
+.mail-area button:hover{
+    color: #A9508B;
+    background-color: gainsboro;
+    padding: 0.7rem;
+}
+
+
+/* footer */
+#footer{
+    display: grid;
+    grid-template-rows:3fr 2fr ;
+}
+.footer-top{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    justify-content: center;
+    padding: 2rem 7rem;
+    background-color: #F4F4F4;
+    border-bottom: 5px solid #A9508B;
+
+}
+.footer-top h3{
+    margin:1rem 0;
+}
+.html, .css, .design{
+    text-align: center;
+    margin: 0 1rem;
+}
+
+.footer-top img{
+    width: 25%;
+}
+
+.footer-bottom{
+    margin: auto;
+}

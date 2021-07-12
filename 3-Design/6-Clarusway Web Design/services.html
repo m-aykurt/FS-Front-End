@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        #container {
+            display: grid;
+            grid-template-rows: 0.9fr 6.25fr 1fr;
+            line-height: 0.5%;
+        }
+
+        #main {
+            display: grid;
+            grid-template-rows: 0.8fr 5fr;
+            background-image: none;
+            border-bottom: 5px solid #A9508B;
+            background-color: #F4F4F4;
+            
+        }
+
+        .about {
+            background-color: #F4F4F4;
+            color: black;
+            display: flex;
+            padding:1rem 10rem ;
+            justify-content: center;
+            
+
+
+        }
+        .box-group-1{
+            display: flex;
+            flex-direction: column;
+            margin-right: 1rem;
+            
+
+        }
+        .box-group-2{
+            margin-left: 1rem;
+        }
+        .box{
+            padding: 1rem;
+            
+        }
+        .box-2{
+            background-color:#35424A ;
+            color: white;
+        }
+        .box-3{
+            background-color:#35424A ;
+            color: white;
+            padding: 2rem 1rem;
+        }
+        .footer-bottom{
+            text-align: center;
+            align-content: center;
+        }
+        .services{
+            display: flex;
+            padding: 1.5rem;
+            justify-content: space-evenly;
+            color: black;
+
+        }
+
+        .services-box{
+            flex-basis: 50%;
+            margin-right: -5rem;
+            display: flex;
+            flex-direction: column;
+            
+            
+
+        }
+
+        .quote{
+            flex-basis: 20%;
+            color: black;
+            background-color: #35424A;
+            align-self: flex-start;
+            padding: 1rem;
+
+        }
+        .btn-submit{
+            padding:0.7rem ;
+            background-color: #A9508B;
+            color: white;
+        }
+
+        .box-gray{
+            background-color: gainsboro;
+            color: black;
+            margin-bottom:0.4rem;
+            padding:3rem 2rem;
+            /* font-size: 1.2rem; */
+
+        }
+    
+    </style>
+</head>
+
+<body>
+    <div id="container">
+        <div id="navbar">
+            <h1 class="web-design">
+                <span class="clarus-color">Clarusway</span> Web Design
+            </h1>
+            <div class="nav-right">
+                <span> <a class="clarus-color" href="#">HOME</a> </span>
+                <span> <a href="#">ABOUT</a> </span>
+                <span><a href="#">SERVICES</a> </span>
+            </div>
+        </div>
+        <div id="main">
+
+            <div class="mail">
+                <div class="newsletter">
+                    <p>Subscribe To Our Newsletter</p>
+                </div>
+                <div class="mail-area">
+                    <input type="email" name="mail" id="mail" placeholder="Enter Email...">
+                    <button>Subscribe</button>
+                </div>
+            </div>
+            <div class="services">
+                <div class="services-box">
+                    <h3>Services</h3>
+                    <div class="box-gray web-design-box">
+                        <h3>Website Design
+                        </h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus mi augue, viverra sit amet ultricies at, vulputate id lorem. Nulla facilisi.
+
+                        </p>
+                        <div class="price">
+                            Pricing: $1,000 - $3,000
+
+
+                        </div>
+                    </div>
+                    <div class="box-gray web-maintenance"><h3>Website Design
+                    </h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus mi augue, viverra sit amet ultricies at, vulputate id lorem. Nulla facilisi.
+
+                    </p>
+                    <div class="price">
+                        Pricing: $1,000 - $3,000
+
+
+                    </div></div>
+                    <div class="box-gray web-hosting"><h3>Website Design
+                    </h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus mi augue, viverra sit amet ultricies at, vulputate id lorem. Nulla facilisi.
+
+                    </p>
+                    <div class="price">
+                        Pricing: $1,000 - $3,000
+
+
+                    </div></div>
+                </div>
+                <div class="quote">
+                    <form action="./result.html" method="GET" target="_blank">
+                        <h2>Get A Quote</h2>
+                        <label for="name">Name</label> <br>
+                        <input type="text" name="name" id="name"> <br>
+                        <label for="email">Email</label> <br>
+                        <input type="email" name="email" id="email"> <br>
+                        <label for="message">Message</label> <br>
+                        <textarea name="Message" id="message" rows="5" placeholder="Message"></textarea> <br>
+                        <button class="btn-submit" type="submit">Send</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div id="footer">
+
+            <div class="footer-bottom">
+                <p>Clarusway Web Design, Copyright © 2020
+                </p>
+                <img src="./assets/clarusway_logo.png" alt="Clarusway">
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
