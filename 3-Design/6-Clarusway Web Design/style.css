@@ -52,6 +52,9 @@ a{
     color: gray;
 }
 
+input{
+    padding: 0.5rem 0;
+}
 
 
 
@@ -99,13 +102,13 @@ a{
     padding: 0.7rem;
     padding-right: 4rem;
 }
-.mail-area button{
+.btn{
     color: white;
     background-color: #A9508B;
     padding: 0.7rem;
     transition: all 0.3s;
 }
-.mail-area button:hover{
+.btn:hover{
     color: #A9508B;
     background-color: gainsboro;
     padding: 0.7rem;
@@ -140,4 +143,24 @@ a{
 
 .footer-bottom{
     margin: auto;
+}
+
+
+
+/* responsive */
+
+@media screen and (max-width:800px) {
+    #container{
+        display: flex;
+        flex-direction: column;
+    }
+    #navbar{
+        display: flex;
+        flex-direction: column;
+        
+    }
+    .footer-top{
+        display: flex;
+        flex-direction: column;
+    }
 }

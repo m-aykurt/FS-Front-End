@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About</title>
+    <title>Services</title>
     <link rel="stylesheet" href="style.css">
     <style>
         #container {
@@ -84,7 +84,12 @@
             background-color: #35424A;
             align-self: flex-start;
             padding: 1rem;
+            color: white;
 
+        }
+
+        .quote input{
+            width: 100%;
         }
         .btn-submit{
             padding:0.7rem ;
@@ -96,9 +101,35 @@
             background-color: gainsboro;
             color: black;
             margin-bottom:0.4rem;
-            padding:3rem 2rem;
+            padding:3rem 1rem;
+            box-shadow: 0 0 1px 0.5px gray;
+            letter-spacing: 1.2px;
+            
             /* font-size: 1.2rem; */
 
+        }
+
+        .h3-1{
+            padding-bottom: 1rem;
+        }
+        .box-gray h3{
+            padding-bottom: 1rem;
+        }
+        .box-gray p{
+            padding-bottom: 1rem;
+            line-height: 2;
+        }
+        @media screen and (max-width:800px) {
+            #container{
+                display: flex;
+                flex-direction: column;
+            }
+            #main *{
+                display: flex;
+                flex-direction: column;
+                width: 100%;
+            }
+            
         }
     
     </style>
@@ -124,12 +155,12 @@
                 </div>
                 <div class="mail-area">
                     <input type="email" name="mail" id="mail" placeholder="Enter Email...">
-                    <button>Subscribe</button>
+                    <button class="btn btn-submit">Subscribe</button>
                 </div>
             </div>
             <div class="services">
                 <div class="services-box">
-                    <h3>Services</h3>
+                    <h3 class="h3-1">Services</h3>
                     <div class="box-gray web-design-box">
                         <h3>Website Design
                         </h3>
@@ -167,12 +198,13 @@
                     <form action="./result.html" method="GET" target="_blank">
                         <h2>Get A Quote</h2>
                         <label for="name">Name</label> <br>
-                        <input type="text" name="name" id="name"> <br>
+                        <input type="text" name="name" id="name" placeholder="Name"> <br>
                         <label for="email">Email</label> <br>
-                        <input type="email" name="email" id="email"> <br>
+                        <input type="email" name="email" id="email" placeholder="Email Address"> <br>
                         <label for="message">Message</label> <br>
-                        <textarea name="Message" id="message" rows="5" placeholder="Message"></textarea> <br>
-                        <button class="btn-submit" type="submit">Send</button>
+                        <textarea name="" id="" cols="50" rows="3"></textarea>
+                        <br>
+                        <button class="btn btn-submit" type="submit">Send</button>
                     </form>
                 </div>
             </div>
