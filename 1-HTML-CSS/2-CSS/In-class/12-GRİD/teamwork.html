@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- <link rel="stylesheet" href="style.css"> -->
+    <style>
+        #container{
+    display: grid;
+    grid-template-columns: repeat(4,100px);
+    grid-template-rows: repeat(5, 100px);
+    grid-gap: 10px;
+    grid-template-areas: 
+    "Header Header Header Header"
+    "SmallBox1 SmallBox2 SmallBox3 Sidebar"
+    "SmallBox1 SmallBox2 SmallBox3 Sidebar"
+    "MainContent MainContent MainContent Sidebar"
+    "Footer Footer Footer Footer";
+}
+.content{
+    color: white;
+    background-color: blue;
+    /* border: 1px solid white; */
+    padding: 10px;
+}
+.content1{
+    grid-area: Header;
+}
+.content7{
+    grid-area: Footer;
+}
+.content6{
+    grid-area: MainContent;
+}
+.content5{
+    grid-area: Sidebar;
+}
+.content2{
+    grid-area: 2/1/span 2/span 1;
+}
+.content3{
+    grid-row: 2/4;
+}
+.content4{
+    grid-row: 2/4;
+}
+    </style>
+</head>
+<body>
+    <div id="container">
+        <div class="content content1">Header</div>
+        <div class="content content2">Small Box 1</div>
+        <div class="content content3">Small Box 2</div>
+        <div class="content content4">Small Box 3</div>
+        <div class="content content5">Sidebar</div>
+        <div class="content content6">Main Content</div>
+        <div class="content content7">Footer</div>
+    </div>
+</body>
+</html>
