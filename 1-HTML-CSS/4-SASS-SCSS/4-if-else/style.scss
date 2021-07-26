@@ -1,0 +1,23 @@
+@mixin stil($takım){
+    @if ($takım=="fb"){
+        background-color: blue;
+    }
+    @else if ($takım == "gs"){
+        background-color: red;
+    }
+    @else if ($takım == "bjk"){
+        background-color: black;
+        color: white;
+    }
+    @else{
+        background-color: purple;
+    }
+}
+
+
+
+.kutu{
+    float: left;
+    padding: 10px 15px;
+    @include stil("bjk")
+}
