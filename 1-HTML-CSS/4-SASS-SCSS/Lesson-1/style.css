@@ -1,0 +1,66 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+nav {
+  background-color: gray;
+}
+nav::after {
+  clear: both;
+  content: "";
+  display: block;
+}
+
+.left {
+  list-style: none;
+  float: left;
+}
+.left li {
+  display: inline-block;
+  margin: 20px;
+  background-color: #44ffd7;
+}
+.left li:first-child {
+  margin: 0px;
+}
+.left li a {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: red;
+  display: inline-block;
+  padding: 10px;
+}
+
+p {
+  background-color: darkgreen;
+}
+
+.right {
+  float: right;
+}
+
+.cw, .linkedin {
+  padding: 10px;
+  display: inline-block;
+  width: 100px;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: red;
+}
+
+.cw:link {
+  background-color: #44ffd7;
+}
+.cw:hover {
+  background-color: #aaffed;
+}
+
+.linkedin:link {
+  background-color: #44ffd7;
+}
+.linkedin:hover {
+  background-color: #aaffed;
+}
+
+/*# sourceMappingURL=style.css.map */
