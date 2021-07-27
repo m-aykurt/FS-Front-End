@@ -1,1 +1,9 @@
-{"version":3,"sources":["mpget.scss"],"names":[],"mappings":"AAcA;EACI,sBAAA;AAbJ;;AAgBA;EACI,WAAA;EACA,gBAAA;AAbJ","file":"mpget.css"}
+{
+    "version": 3,
+    "mappings": "AAcA,AAAA,IAAI,CAAA;EACA,gBAAgB,EAZP,IAAI;CAahB;;AAED,AAAA,EAAE,CAAA;EACE,KAAK,EAjBI,IAAI;EAkBb,WAAW,EAXL,GAAG;CAYZ",
+    "sources": [
+        "mpget.scss"
+    ],
+    "names": [],
+    "file": "mpget.css"
+}

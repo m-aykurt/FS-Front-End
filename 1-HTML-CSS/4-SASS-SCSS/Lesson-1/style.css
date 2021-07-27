@@ -6,6 +6,7 @@
 nav {
   background-color: gray;
 }
+
 nav::after {
   clear: both;
   content: "";
@@ -16,14 +17,17 @@ nav::after {
   list-style: none;
   float: left;
 }
+
 .left li {
   display: inline-block;
   margin: 20px;
   background-color: #44ffd7;
 }
+
 .left li:first-child {
   margin: 0px;
 }
+
 .left li a {
   text-decoration: none;
   text-transform: uppercase;
@@ -52,6 +56,7 @@ p {
 .cw:link {
   background-color: #44ffd7;
 }
+
 .cw:hover {
   background-color: #aaffed;
 }
@@ -59,8 +64,8 @@ p {
 .linkedin:link {
   background-color: #44ffd7;
 }
+
 .linkedin:hover {
   background-color: #aaffed;
 }
-
 /*# sourceMappingURL=style.css.map */

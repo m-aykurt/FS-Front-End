@@ -2,7 +2,7 @@ div {
   float: left;
 }
 
-.button, #c3, #b2, #a1 {
+.button, #a1, #b2, #c3 {
   width: 100px;
   height: 100px;
   background-color: lawngreen;
@@ -30,5 +30,4 @@ div {
   background-color: orange;
   margin: 15px;
 }
-
 /*# sourceMappingURL=mixin.css.map */
