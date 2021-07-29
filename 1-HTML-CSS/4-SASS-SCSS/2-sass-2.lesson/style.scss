@@ -1,0 +1,85 @@
+// @mixin icon($boyut, $yuvarlak) {
+//     width: $boyut;
+//     height: $boyut;
+//     @if ($yuvarlak){
+//         border-radius: $boyut/2;
+//     }
+// }
+
+// .container{
+//     float: left;
+//     @include icon(250px, true);
+//     background-color: tomato;
+//     display: flex;
+//     justify-content: center;
+//     align-items: center;
+// }
+
+
+// @mixin kenarlik($yon,$tur,$renk ) {
+//     @if ($yon == "l"){
+//         border-left: 3px $tur $renk;
+//     }
+//     @else if ($yon == "r"){
+//         border-right: 3px $tur $renk;
+//     }
+//     @else if ($yon == "t"){
+//         border-top: 3px $tur $renk;
+//     }
+//     @else if ($yon == "b"){
+//         border-bottom: 3px $tur $renk;
+//     }
+// }
+
+// .container{
+//     width: 25rem;
+//     height: 25rem;
+//     background-color: orange;
+//     display: flex;
+//     justify-content: center;
+//     align-items: center;
+//     @include kenarlik(l,dotted ,black )
+// }
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: olivedrab;
+}
+
+.items{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    border: 10px solid red;
+}
+$color1:blue;
+$color2:rgb(40, 40, 54);
+$color3:rgb(180, 180, 206);
+$color4:rgb(33, 83, 33);
+// $color5:rgb(104, 133, 58);
+$color5:rgb(202, 15, 15);
+
+$dizi : $color1,$color2,$color3,$color4,$color5;
+
+$dizi2 : 1,2,3,4,5;
+
+@each $i in $dizi2 {
+    .item-#{$i}{
+
+        font-size: 10px * $i;
+    }
+}
+
+// @for $i from 1 through 5{
+//     .item-#{$i}{
+//         width: 100px *$i;
+//         padding: 15px;
+//         background-color:nth($dizi , $i);
+//         margin: 5px;
+//     }
+// }

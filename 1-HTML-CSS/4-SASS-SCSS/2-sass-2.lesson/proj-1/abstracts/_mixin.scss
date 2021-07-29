@@ -1,0 +1,9 @@
+@mixin boyut($w: null, $h:null) {
+    width:$w ;
+    height: $h;
+}
+
+@mixin renk($a,$b) {
+    background-color: $a;
+    color: $b;
+}
