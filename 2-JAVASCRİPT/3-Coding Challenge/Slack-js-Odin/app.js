@@ -79,3 +79,5 @@
 //         console.log(i);
 //     }
 // }
+
+// map : returns an array
