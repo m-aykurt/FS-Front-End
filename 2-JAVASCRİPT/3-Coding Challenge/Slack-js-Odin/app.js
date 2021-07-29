@@ -66,16 +66,16 @@
 
 // prob-1 fizz-buzz
 
-let answer = parseInt(prompt("enter a number: "));
+// let answer = parseInt(prompt("enter a number: "));
 
-for (let i = 1; i <= answer; i++) {
-    if ((!(i % 3)) && (!(i % 5))) {
-        console.log("FIZZ BUZZ");
-    } else if (!(i % 5)) {
-        console.log("BUZZ");
-    } else if (!(i % 3)) {
-        console.log("FIZZ");
-    } else {
-        console.log(i);
-    }
-}
+// for (let i = 1; i <= answer; i++) {
+//     if ((!(i % 3)) && (!(i % 5))) {
+//         console.log("FIZZ BUZZ");
+//     } else if (!(i % 5)) {
+//         console.log("BUZZ");
+//     } else if (!(i % 3)) {
+//         console.log("FIZZ");
+//     } else {
+//         console.log(i);
+//     }
+// }
