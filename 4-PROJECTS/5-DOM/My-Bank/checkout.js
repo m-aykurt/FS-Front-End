@@ -5,20 +5,28 @@
 // const firstname = urlParams.get("firstname");
 // const lastname = urlParams.get("lastname");
 // alert("welcome " + firstname + " " + lastname);
-const updateProductQuantity = (quantityInput) => {
-    alert(quantityInput.value);
+
+const updateProductQuantity = (input) => {
+    alert(input.value);
 }
+
 document.querySelectorAll(".product-quantity input").forEach(function(input){
     input.addEventListener("change", function(){
-        updateProductQuantity(this);
+        updateProductQuantity(input);
     });
 });
-const removeProduct = (removeButton) => {
-    let productRow = removeButton.parentElement.parentElement;
+
+const removeProduct = (button) => {
+    let productRow = button.parentElement.parentElement;
     productRow.remove();
 }
+
 document.querySelectorAll(".product-removal button").forEach(function(button){
     button.addEventListener("click", function(){
-        removeProduct(this);
+        removeProduct(button);
     });
 });
+
+
+
+
