@@ -44,3 +44,20 @@ const validateEmail = () => {
     }
 }
 
+// const input = document.getElementsByName("last_name")[0];
+// const input = document.getElementById("lastNameId");
+// const input = document.querySelectorAll("#lastNameId")[0]
+// const input = document.querySelectorAll(".input--style-4")[2] //email
+// console.log(input);
+
+// const student = {
+//     x:5,
+//     y:6,
+//     while:42,
+//     "okul adi":"saint joseph",
+
+// }
+// // console.log(myObj);
+// console.log(student["okul adi"]);
+// console.log(student.x);
+// console.log(student.y);
