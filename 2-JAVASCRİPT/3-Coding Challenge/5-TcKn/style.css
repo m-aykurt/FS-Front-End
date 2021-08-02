@@ -1,0 +1,75 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: antiquewhite;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.container {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 10rem;
+}
+
+.container h2 {
+  text-align: center;
+}
+
+.container #tcArea {
+  margin-top: 1rem;
+}
+
+.container #tcArea #tcKn {
+  padding: 1rem;
+  border: 0;
+  border-radius: 5px;
+}
+
+.container #tcArea #tcKn:hover {
+  padding: 1rem;
+  border: 1px solid black;
+  border-radius: 5px;
+}
+
+.container #tcArea button {
+  display: inline-block;
+  margin-left: 4rem;
+  margin-top: 1rem;
+  padding: 1rem;
+  border-radius: 5px;
+  text-align: center;
+}
+
+.container #tcArea button:hover {
+  background-color: brown;
+  color: white;
+}
+
+.error {
+  color: red;
+  font-size: 2rem;
+  text-align: center;
+  margin-top: 1rem;
+}
+
+.success {
+  color: green;
+  font-size: 2rem;
+  text-align: center;
+  margin-top: 1rem;
+}
+/*# sourceMappingURL=style.css.map */
