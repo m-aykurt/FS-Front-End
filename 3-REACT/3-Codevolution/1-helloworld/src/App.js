@@ -5,7 +5,7 @@ import Welcome from './Components/ClassComponent';
 import Hello from './Components/Hello';
 import Message from './Components/Message';
 import Counter from './Components/Counter';
-
+// import ShowName from './Components/FunctionalComponent';
 
 
 function App() {
@@ -16,10 +16,12 @@ function App() {
         <p>
           {/* Hello World !  */}
         </p>
-        {/* <Greet /> */}
-        {/* <Welcome /> */}
+        <Greet name="Murat" heroName = "Batman" >
+          <p>This is children</p>
+        </Greet>
+        {/* <Welcome name ="selin" heroName= "Wonder Woman"/> */}
         {/* <Message /> */}
-        <Counter />
+        {/* <Counter /> */}
  
         <a
           className="App-link"

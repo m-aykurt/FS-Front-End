@@ -9,7 +9,7 @@
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <title>Document</title>
     <style>
-        img{
+        .w{
             width: 200px;
         }
     </style>
@@ -17,8 +17,24 @@
 
 <body>
     <div class="container w-75 mx-auto my-4">
-        <img class="rounded" src="https://picsum.photos/id/684/600/400" alt="1">
-        <img src="https://picsum.photos/id/250/700/400" alt="">
+        <img src="https://picsum.photos/id/684/600/400" alt="1" class="rounded w">
+        <img src="https://picsum.photos/id/77/600/400" alt="2" class="rounded-circle w">
+        <img src="https://picsum.photos/id/72/600/400" alt="2" class="img-thumbnail w">
+        <!-- <img src="https://picsum.photos/id/71/600/400" alt="2" class="img-thumbnail img-fluid"> -->
+        <br><br>
+        <!-- <img src="https://picsum.photos/id/125/600/400" alt="" class="w d-block mx-auto"> -->
+        <div class="clearfix">
+            
+            <img src="https://picsum.photos/id/555/600/400" alt="" class="w float-left">
+            <img src="https://picsum.photos/id/234/600/400" alt="" class="w float-right">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et asperiores modi harum. Nostrum aspernatur aliquid impedit nobis eius esse hic officia libero exercitationem a repudiandae sed, itaque nihil, laudantium modi?</p>
+            
+        </div>
+        <div class="clearfix">
+            <div class="bg-primary p-3 w-25 float-left"></div>
+            <div class="bg-warning p-3 w-75 float-left"></div>
+        </div>
+
     </div>
 
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
