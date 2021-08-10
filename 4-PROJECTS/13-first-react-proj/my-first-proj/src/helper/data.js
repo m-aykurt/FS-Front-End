@@ -1,6 +1,4 @@
-/* comment */
-
-const data = [
+export const data = [
     {
       id: 1,
       title: "New York",
@@ -95,4 +93,3 @@ const data = [
     },
   ];
 
-  console.log(data[0].title)
