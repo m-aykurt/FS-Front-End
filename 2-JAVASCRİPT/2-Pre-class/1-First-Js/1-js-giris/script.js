@@ -134,3 +134,16 @@
 // console.log(val.toFixed(3))
 // console.log(val)
 
+console.log("merhaba")
+console.log(4+2)
+
+const header= document.querySelector("#header");
+
+const btn = document.querySelector(".btn");
+
+
+
+
+btn.addEventListener("click", function(){
+    header.style.color = "red";
+})
