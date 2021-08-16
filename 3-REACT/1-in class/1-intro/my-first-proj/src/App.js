@@ -17,6 +17,7 @@ function App() {
       <MyHeader />
       <ClassComponent name = "murat aykurt"/>
       <FunctionalComponent name="Murat Aykurt" dateBirth = "1992" /> */}
+    
     </div>
   );
 }
