@@ -1,27 +1,46 @@
-import React from "react";
+import React, { Component } from "react";
 
-function Collapse(props) {
-  console.log(props.children)
-  return (
-    <div>
-      <p>
-        <a
-          className="btn btn-primary"
-          data-bs-toggle="collapse"
-          href={"#".concat(props.href)}
-          role="button"
-          aria-expanded="false"
-          aria-controls="collapseExample"
-        >
-          Link with href
-        </a>
-       
-      </p>
-      <div className="collapse" id={props.href}>
-          {props.children}
+export default class Collapse extends Component {
+  constructor() {
+    super();
+
+    this.state = {
+      showContent: false
+    };
+  }
+
+  showMore = () => {
+    this.setState({ showContent: !this.state.showContent });
+  };
+
+  // componentDidMount(){
+  //   console.log("component olusturuldu")
+  // }
+
+
+  // componentDidUpdate(){
+  //   console.log("component guncellendi..")
+  // }
+
+
+
+  render() {
+    return (
+      <div>
+        <p>
+          <button className="btn btn-primary w-100" onClick={this.showMore}>
+            {/* {this.props.children.props.cardTitle} */}
+            {React.Children.map(this.props.children, children => children.props.cardTitle)}
+          </button>
+        </p>
+        {this.state.showContent ? (
+          <div className="collapse show">
+            {this.props.children}
+            {React.Children.map(this.props.children, children => children)}
+
+          </div>
+        ) : null}
       </div>
-    </div>
-  );
+    );
+  }
 }
-
-export default Collapse;

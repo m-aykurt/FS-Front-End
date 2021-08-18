@@ -25,6 +25,19 @@ Storage.prototype.getBooksFromStorage = function () {
 
 // localstorage dan kitap silme
 
-// Storage.prototype.deleteBookFromStorage = function(element){
-//     if (books.title.textContent = null)
-// }
+Storage.prototype.deleteBookFromStorage = function(bookTitle){
+    let books = this.getBooksFromStorage();
+    
+    books.forEach(function(book, index){
+        if (book.title === bookTitle){
+            books.splice(index,1);
+        }
+    })
+    localStorage.setItem("books" , JSON.stringify(books))
+}
+
+// tüm kitapları local den silme
+
+Storage.prototype.clearAllBooksFromStorage = function(){
+    localStorage.removeItem("books")
+}

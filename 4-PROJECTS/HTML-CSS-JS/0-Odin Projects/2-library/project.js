@@ -3,6 +3,7 @@ const newTitle = document.querySelector("#title");
 const newAuthor = document.querySelector("#author");
 const newPage = document.querySelector("#page");
 const removeBtn = document.querySelector("#books")
+const clearBtn = document.querySelector("#clear-books")
 
 
 // UI objesini başlatma
@@ -25,6 +26,7 @@ function eventListeners() {
         ui.loadAllBooks(books);
     });
     removeBtn.addEventListener("click", deleteBook)
+    clearBtn.addEventListener("click", clearAllBooks)
 }
 function addBook(e) {
     const title = newTitle.value;
@@ -34,10 +36,10 @@ function addBook(e) {
     // Yeni kitap oluşturma
     const newBook = new Book(title, author, page);
 
-    // Arayüze film ekleme
+    // Arayüze kitap ekleme
     ui.addBookToUI(newBook);
 
-    // Storage'a film ekleme
+    // Storage'a kitap ekleme
     storage.addBookToStorage(newBook);
 
     ui.clearInputs(newTitle, newAuthor, newPage);
@@ -48,12 +50,15 @@ function addBook(e) {
 function deleteBook(e){
     if (e.target.id === "delete-book"){
         ui.deleteBookFromUI(e.target)
-        // storage.deleteBookFromStorage(e.target)
-
+        storage.deleteBookFromStorage(e.target.parentElement.previousElementSibling.previousElementSibling.previousElementSibling.textContent)
     }
 }
 
-// local den kitap silme
+// tum kitapları silme 
 
+function clearAllBooks(e){
+    ui.clearAllBooksFromUI();
+    storage.clearAllBooksFromStorage();
+}
 
 

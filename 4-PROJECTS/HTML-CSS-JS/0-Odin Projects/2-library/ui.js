@@ -13,9 +13,7 @@ UI.prototype.addBookToUI = function (newBook) {
 
   document.getElementById("tbl-book").style.display = "block"; // Kitabı eklediğimizde tablo gözüksün diye
 
-  const bookList = document.getElementById("books");
-
-
+    const bookList = document.getElementById("books");
   bookList.innerHTML += `
       <tr>
         <td>${newBook.title}</td>
@@ -24,7 +22,10 @@ UI.prototype.addBookToUI = function (newBook) {
         <td><a href="#" id = "delete-book" class = "btn btn-danger">Delete Book</a></td>
       </tr>
     `;
-}
+  }
+
+  
+
 
 UI.prototype.clearInputs = function (element1, element2, element3) {
   element1.value = "";
@@ -35,6 +36,7 @@ UI.prototype.clearInputs = function (element1, element2, element3) {
 UI.prototype.loadAllBooks = function (books) {
   const bookList = document.getElementById("books");
   books.forEach(function (book) {
+
 
     bookList.innerHTML += `
       <tr>
@@ -51,3 +53,13 @@ UI.prototype.loadAllBooks = function (books) {
 UI.prototype.deleteBookFromUI= function(element){
     element.parentElement.parentElement.remove()
 }
+
+UI.prototype.clearAllBooksFromUI = function(){
+  const bookTable = document.querySelector("#bookTable");
+  bookTable.remove();
+
+}
+
+// function disableBtn() {
+//   clearBtn.disabled = true;
+// }
