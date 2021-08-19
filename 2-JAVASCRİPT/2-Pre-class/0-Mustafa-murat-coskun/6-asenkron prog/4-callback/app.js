@@ -1,0 +1,42 @@
+// callback
+
+// function process1(callback){
+//     setTimeout(function(){
+//         console.log("process-1")
+//         callback();
+//     },2000)
+// }
+
+// function process2(){
+//     setTimeout(function(){
+//         console.log("process-2")
+//     },1000)
+// }
+
+// process1(process2);
+
+// console.log("naber")
+
+
+////------------------------------
+
+const langs = ["python", "java","c++"];
+
+function addLang(lang,callback){
+    setTimeout(function(){
+        langs.push(lang);
+        callback()
+        console.log(lang+" eklendi")
+    },2000)
+}
+
+function getAllLangs(){
+    setTimeout(function(){
+        langs.forEach(function(lang){
+            console.log(lang)
+        })
+    },1000)
+}
+
+addLang("javascript",getAllLangs)
+// getAllLangs(); // asenkron
