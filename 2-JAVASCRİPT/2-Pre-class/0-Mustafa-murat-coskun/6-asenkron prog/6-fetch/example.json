@@ -1,0 +1,17 @@
+[
+    {
+        "name":"murat aykurt",
+        "department":"bilişim",
+        "salary" : 3500
+    },
+    {
+        "name":"selin aykurt",
+        "department":"eğitim",
+        "salary" : 5500
+    },
+    {
+        "name":"hasan aykurt",
+        "department":"temizlik",
+        "salary" : 1500
+    }
+]

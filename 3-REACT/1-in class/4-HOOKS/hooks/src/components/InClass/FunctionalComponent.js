@@ -6,7 +6,7 @@ const FunctionalComponent = () => {
 useEffect(()=>{
     console.log("use effect")
     return ()=> {console.log("func comp will unmount")}
-},[]);
+},[counter]);
 
   const increase = () => {
     setCounter(counter + 1);
