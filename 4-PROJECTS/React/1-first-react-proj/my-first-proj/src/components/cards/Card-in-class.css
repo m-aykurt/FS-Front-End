@@ -1,44 +1,63 @@
 @import url("https://fonts.googleapis.com/css2?family=Amatic+SC&display=swap");
+
 .card-container {
     display: flex;
-    flex-wrap:wrap;
+    flex-wrap: wrap;
     justify-content: space-evenly;
 }
-.cards {
+
+.cards{
     padding: 20px;
     background-color: black;
-    border-radius: 7px;
-    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.7);
+    border-radius: 8px;
+    box-shadow: 3px 3px 4px rgba(0,0,0,0.7);
     margin: 1rem;
     position: relative;
     overflow: hidden;
 }
-.title {
+
+.title{
     color: white;
-    font-family: 'Amatic SC', cursive;
+    font-family: "Amatic SC", cursive;
     font-size: 36px;
     padding: 1rem;
 }
-.cards img {
-    object-fit: cover;
+
+.cards img{
+    object-fit:cover;
     height: 350px;
     width: 500px;
     filter: grayscale(0%);
 }
-.cards img:hover {
+
+.cards img:hover{
     filter: grayscale(100%);
 }
-.card-over {
+
+.card-over{
     position: absolute;
-    background-color: rgba(0, 0, 0, 0.5);
-    color:white;
-    bottom:0;
-    left:0;
-    right:0;
-    padding:1rem;
+    background-color: rgba(0,0,0,0.5);
+    color: white;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 1rem;
     transform: translateY(100%);
-    transition: transform 0.7s ease-in-out;
+    transition: all 0.7s ease-in-out;
 }
-.cards:hover .card-over {
+.no-card-over{
+    position: absolute;
+    background-color: rgba(0,0,0,0.5);
+    color: white;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 1rem;
     transform: translateY(0%);
+    transition: all 0.7s ease-in-out;
+}
+
+
+.cards:hover .card-over{
+    /* transform: translateY(0%); */
 }

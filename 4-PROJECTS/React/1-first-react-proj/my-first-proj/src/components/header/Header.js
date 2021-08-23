@@ -1,9 +1,11 @@
 import React from 'react'
 import styles from "./Header.module.css"
-export default function Header() {
+
+const Header=()=>{
     return (
         <div className={styles.header}>
             <h1>POPULAR TOUR PLACES</h1>
         </div>
     )
 }
+export default Header;

@@ -1,26 +1,17 @@
-import React from 'react'
-// import styles from "./Navbar.module.css"
+import React from "react";
 import "./Navbar.css"
-export default function Navbar() {
+
+const Navbar = ()=>{
     return (
-        // <div className={styles.navbar}>
-        //     <div className={styles.navbarli}>
-        //         <a>About Us</a>
-        //         <a>For You</a>
-        //         <a>Services</a>
-        //         <a>Blog</a>
-        //         <a>Vlog</a>
-        //         <a>Contact</a>
-        //     </div>
-        // </div>
         <div className="navbar">
-            <a href="about">About Us</a>
-            <a href="about">For You</a>
-            <a href="about">Services</a>
-            <a href="about">Blog</a>
-            <a href="about">Vlog</a>
-            <a href="about">Blog</a>
-            <a href="about">Contact</a>
+            <a href="aboutus">ABOUT US</a>
+            <a href="foryou">FOR YOU</a>
+            <a href="services">SERVICES</a>
+            <a href="blog">BLOG</a>
+            <a href="vlog">VLOG</a>
+            <a href="contact">CONTACT</a>
         </div>
     )
 }
+
+export default Navbar;

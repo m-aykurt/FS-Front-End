@@ -23,6 +23,8 @@ function App() {
       {/* <FunctionalComponent /> */}
       {true && <ClassComponent />}
       {isVisible ? <FunctionalComponent /> : null}
+
+
     </div>
   );
 }
