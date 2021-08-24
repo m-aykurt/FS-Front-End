@@ -1,0 +1,21 @@
+body{
+    background-color: #F4F4F4;
+}
+
+.title{
+    transform :rotate(90deg);
+    position: absolute;
+    top: 30px;
+    right:30px;
+    
+}
+
+.image{
+    position: relative;
+}
+
+.dark-mode {
+    background-color: black;
+    color: white;
+    transition:  all 0.7s;
+  }
