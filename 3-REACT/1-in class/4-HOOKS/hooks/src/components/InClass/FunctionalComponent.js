@@ -5,7 +5,7 @@ const FunctionalComponent = () => {
 
 useEffect(()=>{
     console.log("use effect")
-    return ()=> {console.log("func comp will unmount")}
+    // return ()=> {console.log("func comp will unmount")} // return dan sonra gelen ifade comp will unmount a karsılık geliyor
 },[counter]);
 
   const increase = () => {
