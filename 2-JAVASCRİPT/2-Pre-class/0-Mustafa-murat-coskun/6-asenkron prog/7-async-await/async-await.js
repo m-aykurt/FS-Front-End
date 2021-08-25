@@ -67,7 +67,7 @@ const request = new Request();
 
 //delete
 
-request
-  .delete("https://jsonplaceholder.typicode.com/albums/10")
-  .then((msg) => console.log(msg))
-  .catch((err) => console.log(err));
+// request
+//   .delete("https://jsonplaceholder.typicode.com/albums/10")
+//   .then((msg) => console.log(msg))
+//   .catch((err) => console.log(err));

@@ -1,6 +1,6 @@
 // async function test(data) {
-//   // js promise döndürecek
-//   // return  data
+  // js promise döndürecek
+//   return  data
 
 //   let promise = new Promise((resolve, reject) => {
 //     setTimeout(() => {
@@ -10,10 +10,12 @@
 
 //   let response = await promise; // 5 saniye bekletecek
 
-//   console.log(response);
+//   console.log(response)
+//   console.log("naber");
 // }
+// test("merhaba");
 
-// test("merhaba").then((response) => console.log(response));
+
 
 // async function testData(data) {
 //   let promise = new Promise((resolve, reject) => {
@@ -33,7 +35,7 @@
 
 // testData(1)
 //   .then((data) => console.log(data))
-//   .catch((err) => console.log(err));
+//   .catch((err) => console.error(err));
 
 
 

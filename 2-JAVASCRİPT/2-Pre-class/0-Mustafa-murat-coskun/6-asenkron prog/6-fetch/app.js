@@ -1,22 +1,18 @@
-function getTextFile() {
-  fetch("example.txt")
-    .then((response) => {
-      response.text();
-    })
-    .then((data) => console.log(data))
-    .catch((err) => {
-      console.log(err);
-    });
-}
+// function getTextFile() {
+//   fetch("example.txt")
+//     .then((response) => {return response.text()})
+//     .then((data) => console.log(data))
+//     .catch((err) => {console.log(err)});
+// }
 
 // getTextFile();
 
-function getJsonFile() {
-  fetch("example.json")
-    .then((response) => response.json())
-    .then((data) => console.log(data))
-    .catch((err) => console.error(err));
-}
+// function getJsonFile() { // local bir json dosyasından veri alma
+//   fetch("example.json")
+//     .then((response) => response.json())
+//     .then((data) => console.log(data))
+//     .catch((err) => console.error(err));
+// }
 
 // getJsonFile();
 
