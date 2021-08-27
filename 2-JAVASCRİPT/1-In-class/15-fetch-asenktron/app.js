@@ -1,45 +1,53 @@
-// -------------------  1'nci DERS
+// setinterval
 
-// setInterval
 // function countSeconds(limit) {
-//     let current = 0;
-//     const intId = setInterval(() => {
-//       if (current == limit) {
-//         clearInterval(intId);
-//         console.log('counter finished.');
-//         return;
-//       }
-//       current++;
-//       console.log(`${current} seconds passed.`);
-//     }, 1000);
-//   }
-//   countSeconds(4);
-
-// setTimeout
-
 //   let current = 0;
-//   function countSeconds2(limit) {
-//     // recursive
-//     if (current > limit) {
+//   const intId = setInterval(() => {
+//     if (current == limit) {
+//       clearInterval(intId);
 //       console.log('counter finished.');
-//     } else {
-//       if (current != 0) {
-//         console.log(`${current} seconds passed.`);
-//       }
-//       current++;
-//       setTimeout(countSeconds2, 1000, limit);
+//       return;
 //     }
+//     current++;
+//     console.log(`${current} seconds passed.`);
+//   }, 1000);
+// }
+// countSeconds(7);
+
+// 2.örnek
+
+// let current = 0;
+// function countSeconds2(limit) {
+//   // recursive
+//   if (current > limit) {
+//     console.log('counter finished.');
+//   } else {
+//     if (current != 0) {
+//       console.log(`${current} seconds passed.`);
+//     }
+//     current++;
+//     setTimeout(countSeconds2, 1000, limit);
 //   }
-//   countSeconds2(3);
+// }
+// countSeconds2(3);
 
-// ------------         PROMISE
+// const promise = new Promise((resolve, reject) => {
+//   const isSuccessful = true;
+//   if (isSuccessful) {
+//     resolve("task completed successfully");
+//   }
+//   reject("failed");
+// });
 
-new Promise((resolve, reject) => {
-  const isSuccesfull = false;
-  if (isSuccesfull) {
-    resolve("task completed succesfully");
-  }
-  reject("failed");
-})
-  .then((response) => console.log(response))
-  .catch((err) => console.log(err));
+// promise
+//   .then((sonuc) => {
+//     console.log(sonuc);
+//     return "devam ediyor";
+//   })
+//   .then((response) => console.log(response + " merhaba"))
+//   .catch((err) => console.log(err)); 
+
+
+
+//                  flag-api
+
