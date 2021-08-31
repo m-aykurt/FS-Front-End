@@ -1,13 +1,15 @@
-import React from 'react'
-import logo from "../../assets/cw.svg"
-import style from "./Header.module.css"
+import React from "react";
+import logo from "../../assets/cw.svg";
+import "./Header.css"
 
 function Header() {
-    return (
-        <div>
-            <img className={style.logo} src={logo} alt="clarus-logo" />
-        </div>
-    )
+  return (
+    <div className="header">
+      <div className="image-div">
+        <img className="logo" src={logo} alt="clarus-logo" />
+      </div>
+    </div>
+  );
 }
 
-export default Header
+export default Header;

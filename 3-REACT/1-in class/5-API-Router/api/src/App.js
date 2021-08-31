@@ -1,34 +1,27 @@
-// import data from "./data.json";
-import React, { useState, useEffect } from "react";
-import Card from "./components/Card";
-import axios from "axios"
+import React from "react";
+import Header from "./components/Header";
+import "./App.css";
+import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+import Home from "./components/pages/Home";
+import About from "./components/pages/About";
+import Profile from "./components/pages/Profile";
+import NotFound from "./components/pages/NotFound";
+import Post from "./components/pages/Post";
 
 function App() {
-  const [itemList, setItemList] = useState([]);
-
-  useEffect(() => {
-    // fetch("https://www.breakingbadapi.com/api/characters")
-    //   .then((response) => response.json())
-    //   .then((data)=> setItemList(data));
-
-  
-    axios.get("https://www.breakingbadapi.com/api/characters").then((res)=>setItemList(res.data))
-  }, []);
-
   return (
-    <div className="App">
-      <header className="header">
-        <img
-          src="https://www.logolynx.com/images/logolynx/55/55a537ca9549600cf7d1d0b274b3bc61.png"
-          alt="Breaking Bad Logo"
-        />
-      </header>
-      <div className="cards">
-        {itemList.map((item) => (
-          <Card key={item.char_id} item={item} />
-        ))}
+    <Router>
+      <div className="App">
+        <Header />
       </div>
-    </div>
+      <Switch>
+        <Route exact path="/" component={Home} />
+        <Route path="/about" component={About} />
+        <Route path="/profile" component={Profile} />
+        <Route path="/post/:id" component={Post} />
+        <Route component={NotFound} />
+      </Switch>
+    </Router>
   );
 }
 

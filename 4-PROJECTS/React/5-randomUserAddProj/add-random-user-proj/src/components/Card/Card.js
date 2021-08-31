@@ -1,23 +1,24 @@
 import React, { useEffect, useState } from "react";
-import man from "../../assets/man.svg";
-import woman from "../../assets/woman.svg";
-import mail from "../../assets/mail.svg";
 import growMan from "../../assets/growing-up-man.svg";
 import growWoman from "../../assets/growing-up-woman.svg";
+import mail from "../../assets/mail.svg";
+import man from "../../assets/man.svg";
 import map from "../../assets/map.svg";
-import phone from "../../assets/phone.svg";
 import lock from "../../assets/padlock.svg";
+import phone from "../../assets/phone.svg";
+import woman from "../../assets/woman.svg";
+
 // import design from "../../assets/design.svg";
 import axios from "axios";
-import style from "./Card.module.css";
-import Item from "./Item";
-
+import "./Card.css";
 
 function Card() {
   const [cards, setCards] = useState([]);
-  const [show, setShow] = useState(false);
+  const [showInfo, setShowInfo] = useState({ title: "", info: "" });
+  const [addUser, setAddUser] = useState([]);
+  const [changeButton, setChangeButton] = useState(true)
 
-  console.log(cards);
+  // console.log(cards);
 
   useEffect(() => {
     myApi();
@@ -25,65 +26,169 @@ function Card() {
 
   const myApi = async () => {
     let resultApi = await getMyApi();
-    setCards(resultApi.results);
+    setCards(resultApi);
+    setShowInfo({
+      title: "My name is",
+      info: cards[0]?.name?.first,
+    });
+    setChangeButton(true)
   };
 
   const getMyApi = async () => {
-    let responseResults = {};
+    let responseResults;
     await axios
       .get("https://randomuser.me/api/")
-      .then((response) => (responseResults = response.data))
+      .then((response) => (responseResults = response.data.results))
       .catch((err) => console.log(err));
     return responseResults;
   };
 
-  // toggle
 
-  const toggle = () => {
-    setShow(!show);
+  const addUserBtn = () => {
+    addUser.length > 0
+      ? addUser?.forEach((item) =>
+          item.id !== cards[0]?.login?.uuid
+            ? setAddUser([
+              ...addUser,
+              {
+                id: cards[0]?.login?.uuid,
+                first: cards[0]?.name?.first,
+                email: cards[0].email,
+                phone: cards[0].cell,
+                age: cards[0].dob.age,
+              },
+            ])
+            : setChangeButton(false)
+      )
+      : setAddUser([
+        ...addUser,
+          {
+            id: cards[0]?.login?.uuid,
+            first: cards[0]?.name?.first,
+            email: cards[0].email,
+            phone: cards[0].cell,
+            age: cards[0].dob.age,
+          },
+        ]);
   };
 
   return (
     <div>
-      <div className={style.container}>
+      <div className="container">
         <div className="headerContainer">
           <div className="picture">
-            <img src={cards?.picture?.large} alt="img" />
+            <img
+              className="image-db"
+              src={cards[0]?.picture?.large}
+              alt="img"
+            />
           </div>
         </div>
         <div className="showInfo">
-            {cards.map((card)=>{
-                <Item prop={card} />
-            })}
-            
+          <p> {showInfo.title} </p>
+          <p className="bigger"> {showInfo.info} </p>
         </div>
+
         <div className="iconList">
-          <div className={style.icons}>
-            <div>
-              {cards?.gender === "male" ? (
-                <img className={style.icon} src={man} alt="man" />
+          <div className="icons">
+            <div
+              id="gender"
+              onClick={() =>
+                setShowInfo({
+                  title: "My name is",
+                  info: cards[0]?.name?.first,
+                })
+              }
+            >
+              {cards[0]?.gender === "male" ? (
+                <img className="icon" src={man} alt="man" />
               ) : (
-                <img className={style.icon} src={woman} alt="woman" />
+                <img className="icon" src={woman} alt="woman" />
               )}
             </div>
 
-            <div onClick={() => setShow(!show)}>
-              
-              <img className={style.icon} src={mail} alt="mail" />
+            <div
+              onClick={() =>
+                setShowInfo({ title: "My email is", info: cards[0]?.email })
+              }
+            >
+              <img className="icon" src={mail} alt="mail" />
             </div>
-            {cards?.gender === "male" ? (
-              <img className={style.icon} src={growMan} alt="man" />
-            ) : (
-              <img className={style.icon} src={growWoman} alt="woman" />
-            )}
-            <img className={style.icon} src={map} alt="mail" />
-            <img className={style.icon} src={phone} alt="mail" />
-            <img className={style.icon} src={lock} alt="mail" />
+            <div
+              onClick={() =>
+                setShowInfo({ title: "My name is", info: cards[0]?.dob?.age })
+              }
+            >
+              {cards[0]?.gender === "male" ? (
+                <img className="icon" src={growMan} alt="man" />
+              ) : (
+                <img className="icon" src={growWoman} alt="woman" />
+              )}
+            </div>
+
+            <div
+              onClick={() =>
+                setShowInfo({
+                  title: "My street is",
+                  info: cards[0]?.location?.street?.name,
+                })
+              }
+            >
+              <img className="icon" src={map} alt="mail" />
+            </div>
+            <div
+              onClick={() =>
+                setShowInfo({ title: "My phone is", info: cards[0]?.cell })
+              }
+            >
+              <img className="icon" src={phone} alt="mail" />
+            </div>
+            <div
+              onClick={() =>
+                setShowInfo({
+                  title: "My password is",
+                  info: cards[0]?.login?.password,
+                })
+              }
+            >
+              <img className="icon" src={lock} alt="mail" />
+            </div>
           </div>
         </div>
+
         <div className="userArea">
-          <div className="changeUser"></div>
-          <div className="addUser"></div>
+          <div className="changeUser">
+            <button type="button" className="btn" onClick={myApi}>
+              NEW USER
+            </button>
+          </div>
+          <div className="addUser">
+            <button type="button" className="btn" onClick={addUserBtn} style={changeButton ? {display:"block"} : {display:"none"}}>
+              ADD USER
+            </button>
+          </div>
+        </div>
+        <div className="addUserArea">
+          <table>
+            <thead>
+              <tr>
+                <th>First Name</th>
+                <th>Email</th>
+                <th>Phone</th>
+                <th>Age</th>
+              </tr>
+            </thead>
+            <tbody>
+              {addUser.map((user, index) => (
+                <tr key={index}>
+                  <td>{user.first}</td>
+                  <td>{user.email}</td>
+                  <td>{user.phone}</td>
+                  <td>{user.age}</td>
+                </tr>
+              ))}
+            </tbody>
+          </table>
         </div>
       </div>
     </div>
