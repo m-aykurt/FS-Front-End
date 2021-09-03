@@ -4,6 +4,7 @@ import List from "./components/List";
 import fs from "./assets/fs.png";
 import aws from "./assets/aws.png";
 import axios from "axios";
+
 function App() {
   const [counter, setCounter] = useState(0);
   const [img, setImg] = useState();
@@ -19,12 +20,15 @@ function App() {
       // .then((res) => console.log(res));
       .then((res) => setStudentsList(res.data));
   }, []);
+
   const handleText = (e) => {
     setText(e.target.value);
   };
+
   const handleSearch = () => {
     setSearch(text);
   };
+
   const filteredStudents = useMemo(
     () =>
       studentsList.filter((student) => {
@@ -32,12 +36,14 @@ function App() {
       }),
     [search, studentsList]
   );
+
   const add = useCallback(() => {
     setStudentsList([
       ...studentsList,
-      { id: studentsList.length + 1, name: "Edward CW" },
+      { id: studentsList.length + 1, name:"Ed harris" },
     ]);
   },[studentsList]);
+
   return (
     <div className="App">
       <Header img={img} />
