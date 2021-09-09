@@ -1,12 +1,10 @@
-import React, { useState } from "react";
+import React, {useState} from "react";
 import { makeStyles } from "@material-ui/core/styles";
 import TextField from "@material-ui/core/TextField";
 import AddIcon from "@material-ui/icons/Add";
 import Button from "@material-ui/core/Button";
-import DeleteIcon from "@material-ui/icons/Delete";
-import HomeIcon from "@material-ui/icons/Home";
-import { ThemeProvider, createTheme } from "@material-ui/core/styles";
-import { green } from "@material-ui/core/colors";
+import TaskItem from "./TaskItem";
+
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -16,36 +14,21 @@ const useStyles = makeStyles((theme) => ({
     },
   },
 }));
-const theme = createTheme({
-  palette: {
-    primary: {
-      main: green[400],
-    },
-  },
 
-  typography: {
-    h2: {
-      fontSize: 18,
-      padding: 2,
-    },
-  },
-});
 
 function TaskContainer() {
   const classes = useStyles();
   const [tasks, setTasks] = useState([]);
-  const [isChecked, setIsChecked] = useState(false);
+
 
   const handleTask = (e) => {
     const input = document.querySelector("#outlined-basic");
     setTasks([...tasks, input.value]);
     e.preventDefault();
   };
+  console.log(tasks)
 
-  const handleCheck = () => {
-    setIsChecked(!isChecked);
-  };
-  console.log(tasks);
+  
 
   return (
     <div>
@@ -69,19 +52,7 @@ function TaskContainer() {
         <div className="table">
           <h3>Table</h3>
           {tasks.map((task, i) => (
-            <ul key={i}>
-              <ThemeProvider theme={theme}>
-                <li>
-                  <HomeIcon onClick={handleCheck} />{" "}
-                  <p
-                    style={isChecked ? { color: "green" } : { color: "black" }}
-                  >
-                    {task}{" "}
-                  </p>{" "}
-                  <DeleteIcon />
-                </li>
-              </ThemeProvider>
-            </ul>
+          <TaskItem task={task} key={i} />
           ))}
         </div>
       </div>
