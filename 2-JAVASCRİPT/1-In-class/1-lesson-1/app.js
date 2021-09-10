@@ -97,18 +97,26 @@
 
 //   console.log(data[0].title)
 
-function getNumber() {
-  const arrayLength = 10;
-  const randomArray = [];
-  let number; 
-  for (let i = 0; i < arrayLength; i++) {
-   number = Math.floor(Math.random() * 10);
-    if (number !== randomArray.last) {
-      randomArray.push(number);
-    } else {
-      return number;
-    }
-  }
-  return randomArray
+// function getNumber() {
+//   const arrayLength = 10;
+//   const randomArray = [];
+//   let number; 
+//   for (let i = 0; i < arrayLength; i++) {
+//    number = Math.floor(Math.random() * 10);
+//     if (number !== randomArray.last) {
+//       randomArray.push(number);
+//     } else {
+//       return number;
+//     }
+//   }
+//   return randomArray
+// }
+// console.log(getNumber());
+
+function sum(...theArgs) {
+  return theArgs.reduce((previous, current) => {
+    return previous + current;
+  });
 }
-console.log(getNumber());
+
+console.log(sum(100,200,2,4,5,6,7,9,0))
