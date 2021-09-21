@@ -34,6 +34,7 @@ const App = () => {
         student.id === id ? { ...student, color: color } : student
       )
     );
+    
   return (
     <StudentContext.Provider value={{students,changeColor}}>
       <div className="App">

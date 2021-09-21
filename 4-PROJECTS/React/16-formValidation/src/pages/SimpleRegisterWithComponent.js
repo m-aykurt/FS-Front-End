@@ -1,58 +1,57 @@
-import React from 'react'
-import '../App.css';
-import { Formik,Form,Field,ErrorMessage} from 'formik';
-import * as Yup from 'yup';
+import React from "react";
+import "../App.css";
+import { Formik, Form, Field, ErrorMessage } from "formik";
+import * as Yup from "yup";
 
-const initialValues={
-    name:"",
-    email:"",
-    userName:"",
-}
+const initialValues = {
+  name: "",
+  email: "",
+  userName: "",
+};
 
-const onSubmit=(values)=>{
-    console.log("Values:",values)
-}
+const onSubmit = (values) => {
+  console.log("Values:", values);
+};
 
-const validationSchema=Yup.object({
-    name:Yup.string()
-    .max(15,"Must be 15 characters or less")
+const validationSchema = Yup.object({
+  name: Yup.string()
+    .max(15, "Must be 15 characters or less")
     .required("Required.Enter name"),
-    userName:Yup.string()
-    .max(15,"Must be 15 characters or less")
+  userName: Yup.string()
+    .max(15, "Must be 15 characters or less")
     .required("Required.Enter user name"),
-    email:Yup.string()
+  email: Yup.string()
     .email("Invalid email address")
-    .required("Required.Enter email address")
-})
+    .required("Required.Enter email address"),
+});
 
 function SimpleRegisterWithComponent() {
-   
-    return (
-        <div>
-        <h1>Simple Form</h1>
-        <Formik
+  return (
+    <div>
+      <h1>Simple Form-With component</h1>
+      <Formik
         initialValues={initialValues}
         onSubmit={onSubmit}
-        validationSchema={validationSchema}>
+        validationSchema={validationSchema}
+      >
         <Form className="formStyle">
-                <label  htmlFor="name">Name</label>
-                <Field type="text" id="name" name="name"/>
-                <ErrorMessage name="name"/>
-                
-                <label  htmlFor="email">Email</label>
-                <Field type="text" id="email" name="email"/>
-                 <ErrorMessage name="email"/>
+          <label htmlFor="name">Name</label>
+          <Field type="text" id="name" name="name" />
+          <ErrorMessage name="name" />
 
-                <label htmlFor="userName">User name</label>
-                <Field type="text" id="userName" name="userName"/>
-                 <ErrorMessage name="userName"/>
+          <label htmlFor="email">Email</label>
+          <Field type="text" id="email" name="email" />
+          <ErrorMessage name="email" />
 
-                <button>Submit</button>
-            </Form>
-        </Formik>
-        </div>
-    )
+          <label htmlFor="userName">User name</label>
+          <Field type="text" id="userName" name="userName" />
+          <ErrorMessage name="userName" />
+
+          <button>Submit</button>
+        </Form>
+      </Formik>
+    </div>
+  );
 }
 
-export default SimpleRegisterWithComponent
-
+export default SimpleRegisterWithComponent;

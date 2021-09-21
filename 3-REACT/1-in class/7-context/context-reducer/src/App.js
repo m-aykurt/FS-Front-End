@@ -9,7 +9,7 @@ const initialState = {
 
 function App() {
   const [state, dispatch] = useReducer(Reducer, initialState);
-  const {data,loading,error}=state
+  const { data, loading, error } = state;
 
   // const [data, setData] = useState("");
   // const [loading, setLoading] = useState(false);
