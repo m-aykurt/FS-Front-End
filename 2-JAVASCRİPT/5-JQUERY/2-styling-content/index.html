@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <a href="#">link</a>
+    <h3 id="header">JQuery Dersleri</h3>
+    <ul id="liste">
+        <li class="item">JQuery Reference</li>
+        <li>Selectors <a href="#">link</a></li>
+        <li class="item">JQuery Plugins</li>
+    </ul>
+
+    <ul>
+        <li class="item">JQuery Reference</li>
+        <li>Selectors <a href="#">link</a></li>
+        <li class="item">JQuery Plugins</li>
+    </ul>
+    <script>
+        $("#header").css("color","red");
+        $("#liste").css("color","blue")
+        $("a").css("text-decoration","none")
+        var styles = {
+            color:"red",
+            border:"1px solid black",
+            fontSize:"18px"
+        }
+        $(".item").css(styles)
+
+
+     
+    </script>
+
+
+</body>
+
+</html>

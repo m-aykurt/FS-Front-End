@@ -1,0 +1,56 @@
+<html>
+<head>
+    <title>Js ile sıralama değiştirme</title>
+<script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+<style>
+.divim {
+    width: 400px;
+    height: 130px;
+    padding: 20px;
+    background-color: aqua;
+    position: relative;
+}
+</style>
+</head>
+<body>
+<div class="divim">
+<table id="tablom">
+  <ul>
+      <li>a</li>
+      <li>b</li>
+      <li>c</li>
+  </ul>
+</table><br>
+<button value="4-5 yer degistir" id="degistir">4 ve 5.Satır Yer Değiştir</button>
+</div>
+ <script type="text/javascript">
+//Butona basınca işlem yapmak isterseniz
+$("#degistir").on("click", function() {  
+$(function(){
+  function move(start, end){
+    var myTable = $('ul');
+    if(start>end){
+      myTable.eq(start-1).insertBefore(myTable.eq(end-1));
+    }else{
+      myTable.eq(start-1).insertAfter(myTable.eq(end-1));
+    }
+  }
+  move(4,5);
+}); 
+  
+ });
+ //Sayfa açıldığında değişmiş şekilde görmek isterseniz
+$(function(){
+  function move(start, end){
+    var myTable = $('#tablom tbody tr');
+    if(start>end){
+      myTable.eq(start-1).insertBefore(myTable.eq(end-1));
+    }else{
+      myTable.eq(start-1).insertAfter(myTable.eq(end-1));
+    }
+  }
+  move(2,3);
+});
+</script>
+</body>
+</html>

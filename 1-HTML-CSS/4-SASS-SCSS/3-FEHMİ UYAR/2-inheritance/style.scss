@@ -1,0 +1,55 @@
+$size1:15px;
+$size2:5px;
+
+.error {
+  border: 1px solid red;
+  color: red;
+  font-size: 2rem;
+  padding: 5px;
+}
+
+.error-width {
+  @extend .error;
+  border-width: 5px;
+}
+
+%message {
+  border: 1px solid black;
+  padding: 15px+$size2+25px;
+  width: 40%;
+  color: black;
+}
+
+.error {
+  @extend %message;
+  border-color: red;
+  color: red;
+}
+
+.success {
+  @extend %message;
+  border-color: green;
+  color: green;
+}
+
+.warning {
+  @extend %message;
+  border-color: orange;
+  color: orange;
+}
+
+.info {
+  @extend %message;
+  border-color: turquoise;
+  color: turquoise;
+}
+/*
+.text{
+    font:{
+        family:Gotham, "Helvetica Nue";
+        size:30px;
+        style:normal;
+        weight:bold;
+    }
+}
+*/

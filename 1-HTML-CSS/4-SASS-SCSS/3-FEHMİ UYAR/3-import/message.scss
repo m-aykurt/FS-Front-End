@@ -1,0 +1,55 @@
+$size1:15px;
+$size2:5px;
+
+@mixin boxRadius($value){
+  border-radius: $value;
+}
+
+
+
+%message {
+  border: 1px solid black;
+  padding: 15px+$size2+25px;
+  width: 40%;
+  color: black;
+}
+
+.error {
+  @extend %message;
+  border-color: red;
+  color: red;
+  @include boxRadius(5px)
+}
+
+.success {
+  @extend %message;
+  border-color: green;
+  color: green;
+  @include boxRadius(10px)
+
+}
+
+.warning {
+  @extend %message;
+  border-color: orange;
+  color: orange;
+  @include boxRadius(25px)
+
+}
+
+.info {
+  @extend %message;
+  border-color: turquoise;
+  color: turquoise;
+  @include boxRadius(30px)
+}
+/*
+.text{
+    font:{
+        family:Gotham, "Helvetica Nue";
+        size:30px;
+        style:normal;
+        weight:bold;
+    }
+}
+*/

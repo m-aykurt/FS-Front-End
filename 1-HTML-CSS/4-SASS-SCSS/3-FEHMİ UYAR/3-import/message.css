@@ -1,0 +1,42 @@
+.error, .success, .warning, .info {
+  border: 1px solid black;
+  padding: 45px;
+  width: 40%;
+  color: black;
+}
+
+.error {
+  border-color: red;
+  color: red;
+  border-radius: 5px;
+}
+
+.success {
+  border-color: green;
+  color: green;
+  border-radius: 10px;
+}
+
+.warning {
+  border-color: orange;
+  color: orange;
+  border-radius: 25px;
+}
+
+.info {
+  border-color: turquoise;
+  color: turquoise;
+  border-radius: 30px;
+}
+
+/*
+.text{
+    font:{
+        family:Gotham, "Helvetica Nue";
+        size:30px;
+        style:normal;
+        weight:bold;
+    }
+}
+*/
+/*# sourceMappingURL=message.css.map */

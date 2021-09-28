@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+
+    <style>
+        .highlight {
+            background-color: yellow;
+        }
+
+        .green {
+            background-color: green;
+            padding: 1rem;
+        }
+
+        .toggle {
+            background-color: red;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>jquery helper metgods</h1>
+
+    <p id="p1">Web Developer Eğitimi</p>
+
+    <p id="p2">Web Developer Eğitimi</p>
+
+    <p class="paragraf">Web Developer Eğitimi</p>
+
+    <p class="paragraf">Web Developer Eğitimi</p>
+
+    <script>
+        // $(document).ready(function() {
+        //     console.log("birinci yöntem")
+        // })
+
+        $(function(){
+            // console.log("document ready")
+            $("#p1").click(function(){
+                $(this).addClass("green")
+            })
+
+            $(".paragraf").click(function(){
+                $(this).addClass("green")
+            })
+
+        })
+    </script>
+
+
+</body>
+
+
+</html>

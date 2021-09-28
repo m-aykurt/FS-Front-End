@@ -1,0 +1,69 @@
+@import "variables";
+@import "message";
+
+
+.demo {
+    color: $color;
+    font-size: $size24;
+    font: $font;
+  }
+  
+  .#{$name} {
+    $rad: 5px;
+    font-size: $size24;
+    color: $red;
+    border-radius: $rad;
+    background-color: $color;
+  }
+  
+  #menu {
+    background-color: $color;
+    ul {
+      width: 100%;
+      list-style: none;
+    }
+    li {
+      display: inline-block;
+    }
+    a {
+      color: white;
+      text-decoration: none;
+      padding: 16px 26px;
+      text-align: center;
+      &:hover {
+        text-decoration: underline;
+        color: black;
+      }
+    }
+  }
+  
+  /*section*/
+  
+  section {
+    article {
+      .article-header {
+        font-size: 30px;
+        font-weight: bold;
+        color: $color;
+        border-bottom: 1px dashed black;
+      }
+      .article-content {
+        font-family: $font;
+        color: #444;
+        a {
+          color: green;
+          &:hover {
+            color: red;
+          }
+        }
+      }
+      p {
+        .article-footer {
+          font-weight: bold;
+          color: $color;
+          border-top: 1px dashed black;
+        }
+      }
+    }
+  }
+  
