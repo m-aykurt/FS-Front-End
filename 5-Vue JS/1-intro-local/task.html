@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <title>Document</title>
+</head>
+
+<body>
+
+
+    <div id="exercise">
+        <!-- 1) Interpolation yani {{}} Syntax'ını kullanarak <p> elementinin içeriğini Name ve Age verileriyle doldurun-->
+        <p>VueJS Muazzam bir Framework - {{name}}-{{name}}</p>
+        <!-- 2) Yaşınızı 5 ile çarpıp <p> içerisinde yazdırınız -->
+
+        <p>{{age*5}}</p>
+
+        <!-- 3) Fonksiyon çağırarak 0 ile 1 arasında bir sayı üretip <p> içerisinde yazdırınız (Math.random()) -->
+        <p>{{this.random()}}</p>
+
+        <!-- 4) Google üzerinden bulacağınız herhangi bir fotoğrafı <img> elementinde gösterme işlemini yapınızı. Bunu yaparken "src" attribute' una bind etmeyi unutmayınız -->
+            <img v-bind:src="link" alt="">
+        <!-- 5) Name değişkeninin değerinin <input /> içine yazdığınız değer ile anlık olarak değiştirilmesini sağlayınız. ("value" attribute kullanarak) -->
+        <div>
+            <input type="text">
+        </div>
+    </div>
+    <script>
+        new Vue({
+            el: "#exercise",
+            data: {
+                name: "Murat",
+                age: 29,
+                link:"https://upload.wikimedia.org/wikipedia/commons/thumb/9/95/Vue.js_Logo_2.svg/1200px-Vue.js_Logo_2.svg.png"
+            },
+            methods:{
+                random:function(){
+                    return Math.random()
+                }
+            }
+
+        });
+    </script>
+</body>
+
+</html>

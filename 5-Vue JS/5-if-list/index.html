@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+
+    <title>Document</title>
+</head>
+
+<body>
+    <div id="app">
+        <p v-if='show'>Beni görebilirsin !</p>
+        <p v-else>Beni görebilir misin acaba ? </p>
+        <button @click="show = !show">Göster - Gizle</button>
+        <p v-if="sayi<10">Sayı 10 dan Kücük</p>
+        <p v-else-if="sayi>10">Sayı 10 dan BÜYÜK</p>
+        <p v-else>Sayı 10 dan eşit</p>
+        <hr>
+        <button @click="showPar=!showPar">Göster/Gizle</button>
+        <p v-show="showPar">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Molestiae temporibus, commodi
+            saepe incidunt maiores culpa est voluptate dolorem soluta animi nisi. Tenetur distinctio velit officiis
+            commodi nisi nostrum excepturi error.</p>
+    </div>
+
+
+    <script>
+        new Vue({
+            el: "#app",
+            data: {
+                show: true,
+                sayi: 15,
+                showPar: false,
+            }
+        })
+    </script>
+</body>
+
+</html>

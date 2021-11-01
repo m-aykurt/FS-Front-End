@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+    <title>Document</title>
+</head>
+
+<body>
+    <div id="app">
+        <h2>
+            <p v-once>
+                {{title}}
+            </p>
+            <p>
+                {{ hello() }} <a v-bind:href="link">LINK</a>
+            </p>
+            <p v-html="blogLink"></p>
+        </h2>
+    </div>
+
+</body>
+<script>
+    new Vue({
+        el: "#app",
+        data: {
+            title: "Merhaba VueJs eğitimi",
+            desc: "bu bir acıklamadır",
+            link: "https://www.google.com/webhp?hl=tr&sa=X&ved=0ahUKEwjc5KXZgObzAhXXg_0HHbYiCIUQPAgI",
+            blogLink: "<a href='https://www.yahoo.com/'>YAHOO</a>"
+        },
+        methods: {
+            hello: function () {
+                this.title = "Merhaba!!"
+                return this.title
+            }
+        }
+    });
+</script>
+
+</html>
